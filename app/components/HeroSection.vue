@@ -1,6 +1,6 @@
 <template>
   <section class="relative w-full h-[100svh] overflow-hidden">
-    <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop playsinline preload="auto">
+    <video ref="bgVideo" class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop playsinline preload="auto">
       <source src="/video/bg-video.mp4" type="video/mp4" />
     </video>
 
@@ -29,3 +29,15 @@
     </div>
   </section>
 </template>
+
+<script setup>
+const bgVideo = ref(null)
+
+onMounted(() => {
+  if (bgVideo.value) {
+    bgVideo.value.play().catch(() => {
+      console.log('El navegador bloqueó el autoplay del video')
+    })
+  }
+})
+</script>
