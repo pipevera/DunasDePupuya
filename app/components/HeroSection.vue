@@ -11,11 +11,11 @@
       <span class="bg-red-500 px-4 py-2 rounded-full shadow-xl hover:scale-105 transition">
         PARCELAS EN EL MAR
       </span>
-      <h1 class="text-5xl md:text-[80px] font-thin font-Darina leading-none">
+      <h1 class="text-5xl md:text-[80px] font-thin font-Darina leading-none text-balance md:text-pretty">
         Tener un lugar en la costa no es un sueño, es una decisión
       </h1>
       <div class="space-y-4">
-        <p class="text-base md:text-xl font-light">
+        <p class="text-base md:text-xl font-light text-balance">
           Más de 40 parcelas entregadas en la Costa de Navidad avalan nuestra
           promesa: acompañarte en un proceso seguro y cercano para que tu vida
           junto al mar sea una realidad.
