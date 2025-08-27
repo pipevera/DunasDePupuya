@@ -9,7 +9,7 @@
       <div class="hidden md:flex gap-8 text-white font-semibold">
         <NuxtLink v-for="link in links" :key="link.name" :to="link.to" :href="link.href"
           class="hover:text-yellow-400 transition" :class="{ 'cursor-pointer': link.scroll }"
-          @click.prevent="scrollToSection(link)">
+          @click.prevent="handleLinkClick(link)">
           {{ link.name }}
         </NuxtLink>
       </div>
@@ -46,11 +46,13 @@
 </template>
 
 <script setup>
-const isOpen = ref(false)
+import { useRouter, useRoute } from 'vue-router'
+import { ref, nextTick } from 'vue'
 
-const toggleMenu = () => {
-  isOpen.value = !isOpen.value
-}
+const router = useRouter()
+const route = useRoute()
+
+const isOpen = ref(false)
 
 const links = [
   { name: "Home", scroll: true, href: "#home" },
@@ -58,6 +60,10 @@ const links = [
   { name: "Sobre Nosotros", scroll: true, href: "#nosotros" },
   { name: "Conversemos", scroll: true, href: "#contacto" },
 ]
+
+const toggleMenu = () => {
+  isOpen.value = !isOpen.value
+}
 
 const scrollToSection = (link) => {
   if (link.scroll && link.href) {
@@ -68,11 +74,25 @@ const scrollToSection = (link) => {
   }
 }
 
-const handleMobileClick = (link) => {
-  scrollToSection(link)
-  isOpen.value = false 
+const handleLinkClick = async (link) => {
+  isOpen.value = false
+
+  if (link.to) {
+    // Link a otra página
+    router.push(link.to)
+  } else if (link.scroll && link.href) {
+    // Link de scroll
+    if (route.path !== '/') {
+      // Si no estamos en home, ir a home primero
+      await router.push('/')
+      // Esperar que el DOM se renderice
+      await nextTick()
+    }
+    scrollToSection(link)
+  }
 }
 </script>
+
 
 <style scoped>
 .slide-fade-enter-active {
