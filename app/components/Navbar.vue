@@ -1,6 +1,6 @@
 <template>
-  <nav class="w-full h-20 fixed top-0 left-0 z-50 ">
-    <div class="flex items-center justify-between container mx-auto p-4">
+  <nav class="w-full h-20 fixed top-0 left-0 z-50 bg-black/40 backdrop-blur-sm md:bg-transparent">
+    <div class="flex items-center justify-between container mx-auto px-2 md:px-4 h-full">
       <div>
         <NuxtLink to="/">
           <img class="w-[200px] sm:w-[300px] md:w-[400px]" src="/images/Dunas-Logo.png" alt="Logo Dunas de Pupuya" />
@@ -32,14 +32,21 @@
         </button>
       </div>
     </div>
+    
+    <!-- Menú móvil con mejor backdrop -->
     <transition name="slide-fade">
-      <div v-if="isOpen"
-        class="md:hidden flex flex-col items-center gap-6  text-white font-semibold py-8 bg-transparent backdrop-blur-sm">
-        <NuxtLink v-for="link in links" :key="link.name" :to="link.to" :href="link.href"
-          class="hover:text-yellow-400 transition text-lg" :class="{ 'cursor-pointer': link.scroll }"
-          @click.prevent="handleLinkClick(link)">
-          {{ link.name }}
-        </NuxtLink>
+      <div v-if="isOpen" class="md:hidden">
+        <!-- Overlay con blur mejorado para mobile -->
+        <div class="absolute top-full left-0 w-full bg-black/40  ">
+          <div class="flex flex-col items-center gap-6 text-white font-semibold py-8">
+            <NuxtLink v-for="link in links" :key="link.name" :to="link.to" :href="link.href"
+              class="hover:text-yellow-400 transition text-lg" :class="{ 'cursor-pointer': link.scroll }"
+              @click.prevent="handleLinkClick(link)">
+              {{ link.name }}
+            </NuxtLink>
+          </div>
+        </div>
+
       </div>
     </transition>
   </nav>
