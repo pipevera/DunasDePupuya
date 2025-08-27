@@ -37,7 +37,7 @@
         class="md:hidden flex flex-col items-center gap-6  text-white font-semibold py-8 bg-transparent backdrop-blur-sm">
         <NuxtLink v-for="link in links" :key="link.name" :to="link.to" :href="link.href"
           class="hover:text-yellow-400 transition text-lg" :class="{ 'cursor-pointer': link.scroll }"
-          @click.prevent="handleMobileClick(link)">
+          @click.prevent="handleLinkClick(link)">
           {{ link.name }}
         </NuxtLink>
       </div>
@@ -76,23 +76,20 @@ const scrollToSection = (link) => {
 
 const handleLinkClick = async (link) => {
   isOpen.value = false
-
   if (link.to) {
-    // Link a otra página
     router.push(link.to)
   } else if (link.scroll && link.href) {
-    // Link de scroll
     if (route.path !== '/') {
-      // Si no estamos en home, ir a home primero
-      await router.push('/')
-      // Esperar que el DOM se renderice
-      await nextTick()
+      router.push('/').then(async () => {
+        await nextTick()
+        scrollToSection(link)
+      })
+    } else {
+      scrollToSection(link)
     }
-    scrollToSection(link)
   }
 }
 </script>
-
 
 <style scoped>
 .slide-fade-enter-active {
