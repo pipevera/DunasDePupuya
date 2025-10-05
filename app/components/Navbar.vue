@@ -1,13 +1,11 @@
 <template>
   <nav :class="[
     'w-full h-20 fixed top-0 left-0 z-50 shadow-xl transition-all duration-300',
-    scrolled ? 'bg-white' : 'bg-black/40 backdrop-blur-sm md:bg-transparent'
+    scrolled ? 'bg-white/60 backdrop-blur-md' : 'bg-black/20 backdrop-blur-md md:bg-transparent'
   ]">
     <div class="flex items-center justify-between  max-w-7xl mx-auto px-8 h-full">
-      <div>
-        <div class="cursor-pointer" @click="scrollToTop">
-          <img class="w-[200px] sm:w-[300px] md:w-[400px]" src="/images/Dunas-Logo.png" alt="Logo Dunas de Pupuya" />
-        </div>
+      <div class="cursor-pointer relative right-8 md:right-10" @click="scrollToTop">
+        <img class="w-[300px] md:w-[400px]" src="/images/Dunas-Logo.png" alt="Logo Dunas de Pupuya" />
       </div>
       <div :class="[
         'hidden md:flex gap-8 font-semibold transition-colors duration-300',

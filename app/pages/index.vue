@@ -3,5 +3,6 @@
     <HeroSection />
     <CardContainer />
     <Confianza />
+    <Footer />
   </div>
 </template>
