@@ -7,6 +7,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
   css: ['@/assets/css/main.css'],
+  googleFonts: {
+    families: {
+      Raleway: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      preload: true,
+      preconnect: true,
+      download: true,
+      base64: true,
+    },
+  },
   
   // Configuración de Vite para Nuxt 4
   vite: {

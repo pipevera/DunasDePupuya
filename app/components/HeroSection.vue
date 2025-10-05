@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full h-[100svh] overflow-hidden">
+  <section data-section="home" class="relative w-full h-[100svh] overflow-hidden">
     <video ref="bgVideo" class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop playsinline preload="auto">
       <source src="/video/bg-video.mp4" type="video/mp4" />
     </video>
@@ -7,7 +7,7 @@
     <div class="absolute inset-0 bg-black/30"></div>
 
     <div
-      class="relative z-10 flex flex-col items-center justify-center h-full text-white max-w-4xl mx-auto text-center space-y-16 px-8 md:px-0">
+      class="relative z-10 flex flex-col items-center justify-center h-full text-white max-w-4xl mx-auto text-center space-y-16 px-8">
       <span class="bg-red-500 px-4 py-2 rounded-full shadow-xl hover:scale-105 transition">
         PARCELAS EN EL MAR
       </span>

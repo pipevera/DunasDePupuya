@@ -3,19 +3,21 @@
     'w-full h-20 fixed top-0 left-0 z-50 shadow-xl transition-all duration-300',
     scrolled ? 'bg-white' : 'bg-black/40 backdrop-blur-sm md:bg-transparent'
   ]">
-    <div class="flex items-center justify-between  max-w-7xl mx-auto px-2 md:px-4 h-full">
+    <div class="flex items-center justify-between  max-w-7xl mx-auto px-8 h-full">
       <div>
-        <NuxtLink to="/">
+        <div class="cursor-pointer" @click="scrollToTop">
           <img class="w-[200px] sm:w-[300px] md:w-[400px]" src="/images/Dunas-Logo.png" alt="Logo Dunas de Pupuya" />
-        </NuxtLink>
+        </div>
       </div>
       <div :class="[
         'hidden md:flex gap-8 font-semibold transition-colors duration-300',
         scrolled ? 'text-gray-800' : 'text-white'
       ]">
-        <NuxtLink v-for="link in links" :key="link.name" :to="link.to" :href="link.href"
-          class="hover:text-yellow-400 transition" :class="{ 'cursor-pointer': link.scroll }"
-          @click.prevent="handleLinkClick(link)">
+        <NuxtLink v-for="link in links" :key="link.name" :class="[
+          'relative pb-2 transition cursor-pointer group px-2',
+          'before:content-[\'\'] before:absolute before:bottom-0 before:left-0 before:h-[3px] before:bg-yellow-400 before:transition-all before:duration-300',
+          activeSection === link.section ? 'before:w-full' : 'before:w-0 hover:before:w-full'
+        ]" @click="handleLinkClick(link)">
           {{ link.name }}
         </NuxtLink>
       </div>
@@ -41,21 +43,18 @@
         </button>
       </div>
     </div>
-    
-    <!-- Menú móvil con mejor backdrop -->
+
     <transition name="slide-fade">
       <div v-if="isOpen" class="md:hidden">
-        <!-- Overlay con blur mejorado para mobile -->
         <div class="absolute top-full left-0 w-full bg-black/40  ">
           <div class="flex flex-col items-center gap-6 text-white font-semibold py-8">
-            <NuxtLink v-for="link in links" :key="link.name" :to="link.to" :href="link.href"
-              class="hover:text-yellow-400 transition text-lg" :class="{ 'cursor-pointer': link.scroll }"
-              @click.prevent="handleLinkClick(link)">
+            <NuxtLink v-for="link in links" :key="link.name"
+              class="hover:text-yellow-400 transition text-lg cursor-pointer"
+              @click="handleLinkClick(link)">
               {{ link.name }}
             </NuxtLink>
           </div>
         </div>
-
       </div>
     </transition>
   </nav>
@@ -70,13 +69,29 @@ const route = useRoute()
 
 const isOpen = ref(false)
 const scrolled = ref(false)
+const activeSection = ref('home')
 
 const handleScroll = () => {
   scrolled.value = window.scrollY > 400
+
+  const sections = ['home', 'proyectos', 'nosotros', 'contacto']
+  const scrollPosition = window.scrollY + 100
+
+  for (const sectionName of sections) {
+    const element = document.querySelector(`[data-section="${sectionName}"]`)
+    if (element) {
+      const { offsetTop, offsetHeight } = element
+      if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+        activeSection.value = sectionName
+        break
+      }
+    }
+  }
 }
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
+  handleScroll() 
 })
 
 onUnmounted(() => {
@@ -84,38 +99,44 @@ onUnmounted(() => {
 })
 
 const links = [
-  { name: "Home", scroll: true, href: "#home" },
-  { name: "Proyectos", to: "/proyectos" },
-  { name: "Sobre Nosotros", scroll: true, href: "#nosotros" },
-  { name: "Conversemos", scroll: true, href: "#contacto" },
+  { name: "Home", scroll: true, section: "home" },
+  { name: "Proyectos", scroll: true, section: "proyectos" },
+  { name: "Sobre Nosotros", scroll: true, section: "nosotros" },
+  { name: "Conversemos", scroll: true, section: "contacto" },
 ]
 
 const toggleMenu = () => {
   isOpen.value = !isOpen.value
 }
 
-const scrollToSection = (link) => {
-  if (link.scroll && link.href) {
-    const el = document.querySelector(link.href)
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" })
-    }
+const scrollToSection = (sectionName) => {
+  const el = document.querySelector(`[data-section="${sectionName}"]`)
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" })
   }
+}
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
 }
 
 const handleLinkClick = async (link) => {
   isOpen.value = false
-  if (link.to) {
-    router.push(link.to)
-  } else if (link.scroll && link.href) {
+
+  if (link.scroll && link.section) {
+    activeSection.value = link.section
     if (route.path !== '/') {
       router.push('/').then(async () => {
         await nextTick()
-        scrollToSection(link)
+        scrollToSection(link.section)
       })
     } else {
-      scrollToSection(link)
+      scrollToSection(link.section)
     }
+  } else if (link.to) {
+    router.push(link.to)
   }
 }
 </script>

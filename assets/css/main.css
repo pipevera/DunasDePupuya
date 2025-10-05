@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Darina Elegance - Regular */
 @font-face {
   font-family: "DarinaElegance";

@@ -13,6 +13,7 @@ export default {
     extend: {
       fontFamily: {
         Darina: ['DarinaElegance', 'system-ui', 'sans-serif'],
+        Raleway: ['Raleway', 'system-ui', 'sans-serif'],
       },
       fontStyle: {
         'italic': 'italic',
