@@ -27,6 +27,7 @@
         </p>
       </div>
     </div>
+    <div class="absolute bottom-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-transparent via-amber-50/50 to-amber-50"></div>
   </section>
 </template>
 
