@@ -23,28 +23,28 @@ const parcelas = [
     titulo: 'Marcordillera',
     descripcion: 'Vive entre la montaña y el mar: un lugar con vistas únicas y aire puro para disfrutar cada día.',
     imagen: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80',
-    route: '/proyectos/Marcordillera'
+    route: '/Marcordillera'
   },
   {
     id: 2,
     titulo: 'El Cardal',
     descripcion: 'Descubre tu refugio natural: parcelas amplias rodeadas de paisajes abiertos y tranquilidad absoluta.',
     imagen: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
-    route: '/proyectos/El-cardal'
+    route: '/El-cardal'
   },
   {
     id: 3,
     titulo: 'Vista La Polcura',
     descripcion: 'Disfruta de atardeceres inolvidables desde tu parcela en un condominio seguro y panorámico.',
     imagen: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
-    route: '/proyectos/Vista-la-polcura'
+    route: '/Vista-la-polcura'
   },
   {
     id: 4,
     titulo: 'La Aguada',
     descripcion: 'Conecta con la calma de campo: un entorno verde y pausado, ideal para descansar y proyectar tu vida.',
     imagen: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&q=80',
-    route: '/proyectos/La-aguada'
+    route: '/La-aguada'
   }
 ]
 </script>
