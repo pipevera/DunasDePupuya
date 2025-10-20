@@ -1,8 +1,8 @@
 <template>
-  <section class="relative py-16 px-6 bg-white">
+  <section class="relative py-16 px-8 bg-white">
     <div class="max-w-6xl mx-auto relative z-10">
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div v-if="imageSrc" class="order-2 md:order-1">
+        <div v-if="imageSrc" class="hidden md:block order-2 md:order-1">
           <img 
             :src="imageSrc" 
             :alt="title"
@@ -12,7 +12,7 @@
 
         <!-- Contenido -->
         <div class="order-1 md:order-2">
-          <h2 class="text-3xl md:text-4xl font-Darina font-bold text-gray-900 mb-6">
+          <h2 class="text-5xl md:text-6xl font-Darina mb-12 text-gray-800">
             {{ title }}
           </h2>
           
