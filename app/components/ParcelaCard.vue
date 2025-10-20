@@ -8,7 +8,7 @@
       />
     </div>
     <div class="p-6">
-      <h3 class="text-2xl font-Darina mb-3 text-gray-900">
+      <h3 class="text-3xl font-Darina mb-3 text-gray-900">
         {{ parcela.titulo }}
       </h3>
       <p class="text-gray-600 text-lg">
