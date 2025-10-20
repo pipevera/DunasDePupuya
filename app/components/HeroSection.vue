@@ -1,5 +1,5 @@
 <template>
-  <section data-section="home" class="relative w-full h-[100svh] overflow-hidden">
+  <section id="home" class="relative w-full h-[100svh] overflow-hidden">
     <video ref="bgVideo" class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop playsinline preload="auto">
       <source src="/video/bg-video.mp4" type="video/mp4" />
     </video>

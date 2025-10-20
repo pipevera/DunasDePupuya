@@ -1,5 +1,5 @@
 <template>
-  <section data-section="proyectos" class="relative py-16 md:py-24 bg-amber-50">
+  <section id="proyectos" class="relative py-16 md:py-24 bg-amber-50">
     <div class="max-w-7xl mx-auto px-8">
       <h2 class="text-5xl md:text-6xl font-Darina text-center mb-12 text-gray-800">
         Nuestras Parcelas

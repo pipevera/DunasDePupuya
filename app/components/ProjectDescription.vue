@@ -1,6 +1,6 @@
 <template>
   <section class="relative py-16 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto relative z-10">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div v-if="imageSrc" class="order-2 md:order-1">
           <img 

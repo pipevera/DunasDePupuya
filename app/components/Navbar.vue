@@ -4,9 +4,9 @@
     scrolled ? 'bg-white/60 backdrop-blur-md' : 'bg-black/20 backdrop-blur-md md:bg-transparent'
   ]">
     <div class="flex items-center justify-between  max-w-7xl mx-auto px-8 h-full">
-      <div class="cursor-pointer relative right-8 md:right-10" @click="scrollToTop">
+      <NuxtLink to="/" class="cursor-pointer relative right-8 md:right-10">
         <img class="w-[300px] md:w-[400px]" src="/images/Dunas-Logo.png" alt="Logo Dunas de Pupuya" />
-      </div>
+      </NuxtLink>
       <div :class="[
         'hidden md:flex gap-8 font-semibold transition-colors duration-300',
         scrolled ? 'text-gray-800' : 'text-white'
@@ -76,7 +76,7 @@ const handleScroll = () => {
   const scrollPosition = window.scrollY + 100
 
   for (const sectionName of sections) {
-    const element = document.querySelector(`[data-section="${sectionName}"]`)
+    const element = document.querySelector(`[id="${sectionName}"]`)
     if (element) {
       const { offsetTop, offsetHeight } = element
       if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
@@ -108,7 +108,7 @@ const toggleMenu = () => {
 }
 
 const scrollToSection = (sectionName) => {
-  const el = document.querySelector(`[data-section="${sectionName}"]`)
+  const el = document.querySelector(`[id="${sectionName}"]`)
   if (el) {
     el.scrollIntoView({ behavior: "smooth", block: "start" })
   }
