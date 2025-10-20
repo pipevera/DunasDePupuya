@@ -1,0 +1,204 @@
+<template>
+  <section id="contacto"
+    class="relative py-20 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 overflow-hidden">
+    <!-- Ondas decorativas superiores -->
+    <div class="absolute top-0 left-0 right-0 h-40 overflow-hidden">
+      <svg class="absolute w-full h-full" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C150,80 350,80 600,40 C850,0 1050,0 1200,40 L1200,0 L0,0 Z" fill="white" opacity="0.7" />
+      </svg>
+    </div>
+
+    <!-- Ondas decorativas inferiores -->
+    <div class="absolute bottom-0 left-0 right-0 h-40 overflow-hidden">
+      <svg class="absolute w-full h-full" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,120 C150,40 350,40 600,80 C850,120 1050,120 1200,80 L1200,120 L0,120 Z" fill="white"
+          opacity="0.7" />
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <!-- Encabezado -->
+      <div class="text-center mb-16">
+        <h2 class="text-5xl md:text-6xl font-Darina text-center mb-12 text-gray-800">
+          ¿Listo para dar el primer paso?
+        </h2>
+        <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+          Conversemos sobre tu parcela ideal. Te acompañamos en todo el proceso con asesoría personalizada y sin
+          compromiso.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-stretch">
+        <!-- Formulario de contacto -->
+        <div class="bg-white rounded-2xl p-8 shadow-xl border border-amber-200">
+          <h3 class="text-2xl font-bold mb-6 text-gray-800">Envíanos un mensaje</h3>
+
+          <form @submit.prevent="handleSubmit" class="space-y-5">
+            <div>
+              <label for="name" class="block text-sm font-medium mb-2 text-gray-700">Nombre completo</label>
+              <input v-model="formData.name" type="text" id="name" required
+                class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all text-gray-800 placeholder-gray-400"
+                placeholder="Tu nombre" />
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium mb-2 text-gray-700">Email</label>
+              <input v-model="formData.email" type="email" id="email" required
+                class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all text-gray-800 placeholder-gray-400"
+                placeholder="tu@email.com" />
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-medium mb-2 text-gray-700">Teléfono</label>
+              <input v-model="formData.phone" type="tel" id="phone" required
+                class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all text-gray-800 placeholder-gray-400"
+                placeholder="+56 9 1234 5678" />
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium mb-2 text-gray-700">Mensaje</label>
+              <textarea v-model="formData.message" id="message" rows="4" required
+                class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all text-gray-800 placeholder-gray-400 resize-none"
+                placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+            </div>
+
+            <button type="submit" :disabled="isSubmitting"
+              class="w-full bg-[#E93A3A] hover:bg-red-600 text-white font-semibold py-4 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100">
+              {{ isSubmitting ? 'Enviando...' : 'Enviar mensaje' }}
+            </button>
+          </form>
+
+          <p v-if="submitMessage"
+            :class="['mt-4 text-center text-sm', submitSuccess ? 'text-green-400' : 'text-red-400']">
+            {{ submitMessage }}
+          </p>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="flex flex-col space-y-8 h-full">
+          <div>
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Contáctanos directamente</h3>
+
+            <div class="space-y-6">
+              <!-- WhatsApp -->
+              <a href="https://wa.me/56990023442?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20las%20parcelas."
+                target="_blank"
+                class="flex items-start gap-4 p-4 bg-white border border-green-300 rounded-xl hover:bg-green-100 transition-all group shadow-md">
+                <div class="bg-green-500 p-3 rounded-lg group-hover:scale-110 transition-transform">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-lg text-gray-800">WhatsApp</p>
+                  <p class="text-gray-700">+56 9 9002 3442</p>
+                  <p class="text-sm text-gray-600 mt-1">Respuesta inmediata</p>
+                </div>
+              </a>
+
+              <!-- Teléfono -->
+              <div
+                class="flex items-start gap-4 p-4 bg-white border border-blue-300 rounded-xl hover:bg-blue-100 transition-all group shadow-md">
+                <div class="bg-blue-500 p-3 rounded-lg group-hover:scale-110 transition-transform">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-lg text-gray-800">Teléfono</p>
+                  <p class="text-gray-700">+56 9 9002 3442</p>
+                  <p class="text-sm text-gray-600 mt-1">Lun - Vie: 9:00 - 18:00</p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div
+                class="flex items-start gap-4 p-4 bg-white border border-purple-300 hover:bg-purple-100 transition-all group rounded-xl shadow-md">
+                <div class="bg-purple-500 p-3 rounded-lg group-hover:scale-110 transition-transform">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-lg text-gray-800">Email</p>
+                  <p class="text-gray-700">contacto@dunasdepupuya.cl</p>
+                  <p class="text-sm text-gray-600 mt-1">Respuesta en 24 hrs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA adicional -->
+          <div class="bg-white border border-amber-300 rounded-xl p-6 shadow-lg">
+            <h4 class="text-xl font-bold mb-2 text-gray-800">¿Prefieres visitarnos?</h4>
+            <p class="text-gray-700 mb-4">
+              Agenda una visita a terreno y conoce personalmente nuestras parcelas en la Costa de Navidad.
+            </p>
+            <a href="https://wa.me/56990023442?text=Hola,%20me%20gustaría%20agendar%20una%20visita%20a%20terreno."
+              target="_blank"
+              class="inline-block bg-[#E93A3A] hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
+              Agendar visita
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+const formData = ref({
+  name: '',
+  email: '',
+  phone: '',
+  message: ''
+})
+
+const isSubmitting = ref(false)
+const submitMessage = ref('')
+const submitSuccess = ref(false)
+
+const handleSubmit = async () => {
+  isSubmitting.value = true
+  submitMessage.value = ''
+
+  try {
+    // Aquí puedes integrar con tu backend o servicio de email
+    // Por ahora, simularemos el envío y redirigiremos a WhatsApp
+
+    await new Promise(resolve => setTimeout(resolve, 1000))
+
+    // Crear mensaje para WhatsApp
+    const whatsappMessage = `Hola, soy ${formData.value.name}.\n\nEmail: ${formData.value.email}\nTeléfono: ${formData.value.phone}\n\nMensaje: ${formData.value.message}`
+    const whatsappUrl = `https://wa.me/56990023442?text=${encodeURIComponent(whatsappMessage)}`
+
+    // Abrir WhatsApp
+    window.open(whatsappUrl, '_blank')
+
+    // Limpiar formulario
+    formData.value = {
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    }
+
+    submitMessage.value = '¡Mensaje enviado! Te redirigimos a WhatsApp.'
+    submitSuccess.value = true
+
+  } catch (error) {
+    submitMessage.value = 'Hubo un error. Por favor, intenta nuevamente.'
+    submitSuccess.value = false
+  } finally {
+    isSubmitting.value = false
+    setTimeout(() => {
+      submitMessage.value = ''
+    }, 5000)
+  }
+}
+</script>
