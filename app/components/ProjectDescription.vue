@@ -6,7 +6,7 @@
           <img 
             :src="imageSrc" 
             :alt="title"
-            class="w-full h-auto rounded-lg shadow-lg object-cover"
+            class="w-full h-auto rounded-2xl shadow-lg object-cover"
           />
         </div>
 

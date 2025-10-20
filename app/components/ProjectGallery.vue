@@ -7,7 +7,7 @@
       </h2>
 
       <div class="relative">
-        <div class="relative h-[500px] overflow-hidden rounded-lg shadow-xl">
+        <div class="relative h-[500px] overflow-hidden rounded-2xl shadow-xl">
           <img :src="images[currentIndex]" :alt="`Imagen ${currentIndex + 1}`"
             class="w-full h-full object-cover cursor-pointer transition-transform duration-300 hover:scale-105"
             @click="openLightbox(currentIndex)" />
