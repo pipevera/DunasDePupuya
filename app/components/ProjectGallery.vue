@@ -60,7 +60,7 @@
                 class="max-w-full max-h-[70vh] object-contain rounded-lg" @click.stop />
 
 
-              <button v-if="lightboxIndex > 0" @click="prevLightboxImage"
+              <button v-if="lightboxIndex > 0" @click.stop="prevLightboxImage"
                 class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-4 rounded-full transition-all"
                 aria-label="Anterior">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,7 +68,7 @@
                 </svg>
               </button>
 
-              <button v-if="lightboxIndex < images.length - 1" @click="nextLightboxImage"
+              <button v-if="lightboxIndex < images.length - 1" @click.stop="nextLightboxImage"
                 class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-4 rounded-full transition-all"
                 aria-label="Siguiente">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
