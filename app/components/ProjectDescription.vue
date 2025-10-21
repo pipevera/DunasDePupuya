@@ -1,5 +1,5 @@
 <template>
-  <section class="relative py-16 px-8 bg-white">
+  <section class="relative py-12 px-8 bg-white">
     <div class="max-w-6xl mx-auto relative z-10">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div  class="hidden md:block order-2 md:order-1">

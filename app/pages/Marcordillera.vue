@@ -2,8 +2,8 @@
   <div>
     <ProjectBanner 
       :project="projectData.name" 
-      :title="projectData.title"
       :logo="projectData.logo"
+      :value="projectData.value"
       :description="projectData.description" 
     />
 
