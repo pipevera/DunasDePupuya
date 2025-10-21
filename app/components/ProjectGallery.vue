@@ -1,8 +1,8 @@
 <template>
-  <section class="py-16 px-8 bg-amber-50">
+  <section class="py-16 px-8 ">
     
     <div class="max-w-7xl mx-auto">
-      <h2 v-if="title" class="text-5xl md:text-6xl font-Darina mb-12 text-gray-800 text-center">
+      <h2 v-if="title" class="text-5xl md:text-6xl font-Darina mb-12 text-gray-800 text-start  max-w-3xl">
         {{ title }}
       </h2>
 

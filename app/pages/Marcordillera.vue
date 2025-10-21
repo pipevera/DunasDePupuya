@@ -7,6 +7,11 @@
       :description="projectData.description" 
     />
 
+     <ProjectGallery
+      title="Donde la montaña, mar y naturaleza se dan la mano."
+      :images="projectData.galleryImages"
+    />
+
     <ProjectDescription
       :title="projectData.title"
       :logo="projectData.logo"
@@ -15,10 +20,7 @@
       :features="projectData.features"
     />
 
-    <ProjectGallery
-      title="Galería de Imágenes"
-      :images="projectData.galleryImages"
-    />
+   
   </div>
 </template>
 
