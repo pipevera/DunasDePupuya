@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-8 py-20">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 mb-16">
         <div class="space-y-4 relative md:col-span-1">
-          <img class="relative right-8 md:right-9 w-[300px] md:w-[400px]" src="/images/Dunas-Logo.png" alt="Logo Dunas de Pupuya" />
+          <img class="relative right-8 md:right-9 w-[300px] md:w-[400px]" src="/images/logo/logodunas-blanco.png" alt="Logo Dunas de Pupuya" />
           <p class="text-gray-400">
             Dunas de Pupuya <br> Inmobiliaria
           </p>
@@ -96,7 +96,7 @@
 
 <script setup>
 const scrollToSection = (sectionName) => {
-  const el = document.querySelector(`[data-section="${sectionName}"]`)
+  const el = document.querySelector(`[id="${sectionName}"]`)
   if (el) {
     el.scrollIntoView({ behavior: "smooth", block: "start" })
   }
