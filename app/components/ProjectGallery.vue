@@ -37,7 +37,7 @@
       <div class="mt-6 grid grid-cols-4 md:grid-cols-6 gap-3">
         <div v-for="(image, index) in images" :key="index" @click="currentIndex = index"
           class="relative h-24 rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-105"
-          :class="currentIndex === index ? 'ring-4 ring-blue-500' : 'opacity-70 hover:opacity-100'">
+          :class="currentIndex === index ? 'ring-4 ring-amber-300' : 'opacity-70 hover:opacity-100'">
           <img :src="image" :alt="`Miniatura ${index + 1}`" class="w-full h-full object-cover" />
         </div>
       </div>
@@ -81,7 +81,7 @@
               <div class="flex gap-2 overflow-x-auto py-2 justify-center">
                 <div v-for="(image, index) in images" :key="index" @click="lightboxIndex = index"
                   class="relative h-20 w-20 flex-shrink-0 rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-105"
-                  :class="lightboxIndex === index ? 'ring-4 ring-white' : 'opacity-60 hover:opacity-100'">
+                  :class="lightboxIndex === index ? 'ring-4 ring-amber-300' : 'opacity-60 hover:opacity-100'">
                   <img :src="image" :alt="`Miniatura ${index + 1}`" class="w-full h-full object-cover" />
                 </div>
               </div>

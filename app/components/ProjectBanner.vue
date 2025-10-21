@@ -4,12 +4,13 @@
     <div class="absolute inset-0 bg-black/50"></div>
     <div
       class="relative z-10 flex flex-col items-center justify-center h-full text-white max-w-4xl mx-auto text-center px-6">
-      <h1 class="text-5xl md:text-6xl font-Darina text-center  ">
+      <!-- <h1 class="text-5xl md:text-6xl font-Darina text-center  ">
         {{ title }}
-      </h1>
-      <p class="text-lg md:text-xl font-light">
+      </h1> -->
+      <img :src="logo" alt="Logo" class="w-full h-auto">
+     <!--  <p class="text-lg md:text-xl font-light">
         {{ description }}
-      </p>
+      </p> -->
     </div>
   </section>
 </template>
@@ -25,6 +26,10 @@ defineProps({
     required: true
   },
   description: {
+    type: String,
+    required: true
+  },
+  logo: {
     type: String,
     required: true
   }

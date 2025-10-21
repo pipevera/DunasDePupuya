@@ -1,6 +1,6 @@
 <template>
   <section id="nosotros"
-    class="relative bg-[url(https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1920&q=80)] pb-20 pt-20 md:pt-40 bg-cover bg-center md:bg-fixed">
+    class="relative bg-[url('/images/confianza/confianza-background.webp')] pb-20 pt-20 md:pt-40 bg-cover bg-center md:bg-fixed">
     <div class="absolute inset-0 bg-black/40"></div>
 
     <div class="absolute top-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-amber-50 via-amber-50/50 to-transparent">

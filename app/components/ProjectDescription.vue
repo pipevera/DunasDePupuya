@@ -2,9 +2,9 @@
   <section class="relative py-16 px-8 bg-white">
     <div class="max-w-6xl mx-auto relative z-10">
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div v-if="imageSrc" class="hidden md:block order-2 md:order-1">
+        <div  class="hidden md:block order-2 md:order-1">
           <img 
-            :src="imageSrc" 
+            :src="card" 
             :alt="title"
             class="w-full h-auto rounded-2xl shadow-lg object-cover"
           />
@@ -12,13 +12,13 @@
 
         <!-- Contenido -->
         <div class="order-1 md:order-2">
-          <h2 class="text-5xl md:text-6xl font-Darina mb-12 text-gray-800">
+          <h1 class="text-5xl md:text-6xl font-Darina mb-12 text-gray-800">
             {{ title }}
-          </h2>
+          </h1>
           
           <div class="space-y-4 text-gray-700">
-            <p v-for="(paragraph, index) in description" :key="index" class="text-lg leading-relaxed">
-              {{ paragraph }}
+            <p class="text-lg leading-relaxed">
+              {{ description }}
             </p>
           </div>
 
@@ -51,10 +51,10 @@ const props = defineProps({
     required: true
   },
   description: {
-    type: Array,
+    type: String,
     required: true
   },
-  imageSrc: {
+  card: {
     type: String,
     default: ''
   },
