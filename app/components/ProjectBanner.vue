@@ -1,5 +1,5 @@
 <template>
-  <div class="relative mb-20">
+  <div class="relative z-20">
     <section class="relative w-full h-[500px] overflow-hidden bg-cover bg-center"
       :style="{ backgroundImage: `url('/images/proyectos/${project}/banner/banner.webp')` }">
       <div class="absolute inset-0 bg-black/50"></div>

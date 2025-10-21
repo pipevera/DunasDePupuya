@@ -1,5 +1,5 @@
 <template>
-  <section class="relative py-12 px-8 bg-white">
+  <section class="relative pb-12 pt-20 px-8 bg-amber-50 ">
     <div class="max-w-6xl mx-auto relative z-10">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div  class="hidden md:block order-2 md:order-1">
@@ -38,9 +38,9 @@
         </div>
       </div>
     </div>
-    
-    <!-- Gradiente -->
-    <div class="absolute bottom-0 left-0 right-0 h-40 pointer-events-none bg-gradient-to-b from-transparent via-amber-50/50 to-amber-50"></div>
+
+    <div class="absolute bottom-0 left-0 right-0 h-40 pointer-events-none bg-gradient-to-b from-transparent via-white/50 to-white"></div>
+
   </section>
 </template>
 
