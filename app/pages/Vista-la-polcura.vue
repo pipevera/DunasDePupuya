@@ -40,7 +40,7 @@ useSeoMeta({
   description: 'Vista La Polcura combina serenidad y aventura: terrenos privados cerca de senderos para trekking, ciclismo y deportes acuáticos. Servicios cercanos como colegios y tiendas.',
   ogTitle: 'Terrenos en Pupuya con vista al mar | Vista La Polcura',
   ogDescription: 'Terrenos en Vista La Polcura donde la naturaleza y la vida activa se unen. Perfecto para quienes buscan privacidad, deporte y conexión con la comunidad.',
-  ogImage: '/images/proyectos/vista-la-polcura.jpg',
+  ogImage: '/images/proyectos/vistalapolcura/images/galeria/1.webp',
   twitterCard: 'summary_large_image'
 })
 

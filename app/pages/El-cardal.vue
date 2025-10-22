@@ -40,7 +40,7 @@ useSeoMeta({
   description: 'Disfruta de la tranquilidad de El Cardal, terrenos amplios en un entorno natural con colinas y praderas. Cercano a caminos principales, playas y servicios de Pupuya, Navidad y Matanzas.',
   ogTitle: 'Terrenos en Pupuya listos para construir | El Cardal',
   ogDescription: 'Terrenos en El Cardal donde privacidad y amplitud se combinan con acceso a playas, tiendas y servicios locales.',
-  ogImage: '/images/proyectos/el-cardal.jpg',
+  ogImage: '/images/proyectos/elcardal/images/galeria/1.webp',
   twitterCard: 'summary_large_image'
 })
 

@@ -10,7 +10,7 @@
       class="relative z-10 flex flex-col items-center justify-center h-full text-white max-w-4xl mx-auto text-center space-y-16 px-8">
       
       <h1 class="text-5xl md:text-[80px] font-thin font-Darina leading-none text-balance md:text-pretty">
-        Tener un lugar en la costa no es un sueño, es una decisión
+        Tener un lugar en la costa, no es un sueño, es una decisión
       </h1>
       <p class="text-base md:text-xl font-light text-balance max-w-3xl">
         Más de 40 parcelas entregadas en la Costa de Navidad nos avalan. 

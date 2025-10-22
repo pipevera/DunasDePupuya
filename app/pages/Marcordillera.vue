@@ -40,7 +40,7 @@ useSeoMeta({
   description: 'Vive entre el mar y la montaña en Marcordillera, terrenos amplios cerca de la playa y rodeados de naturaleza. Acceso a Playa de Matanzas, Humedal la Vega de Pupuya y Bikepark Reserva el Maitén.',
   ogTitle: 'Terrenos en Pupuya con vista al mar | Marcordillera',
   ogDescription: 'Imagina despertar con la vista del mar y los cerros de Pupuya. Terrenos ideales para construir tu hogar rodeado de naturaleza y tranquilidad.',
-  ogImage: '/images/proyectos/marcordillera.jpg',
+  ogImage: '/images/proyectos/marcordillera/images/galeria/1.webp',
   twitterCard: 'summary_large_image'
 })
 
