@@ -82,14 +82,14 @@
         </div>
 
         <!-- CTA adicional -->
-        <div class="bg-white border border-amber-300 rounded-xl p-6 shadow-lg w-full">
+        <div class="bg-white border border-[#FF5858] ] rounded-xl p-6 shadow-lg w-full">
           <h4 class="text-xl font-bold mb-2 text-gray-800">¿Prefieres visitarnos?</h4>
           <p class="text-gray-700 mb-4">
             Agenda una visita a terreno y conoce personalmente nuestras parcelas en la Costa de Navidad.
           </p>
           <a href="https://wa.me/56990023442?text=Hola,%20me%20gustaría%20agendar%20una%20visita%20a%20terreno."
             target="_blank"
-            class="inline-block bg-[#E93A3A] hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
+            class="inline-block bg-[#FF5858] text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
             Agendar visita
           </a>
         </div>

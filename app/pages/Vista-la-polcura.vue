@@ -20,10 +20,14 @@
     title="Galería de Imágenes"
     :images="projectData.galleryImages"
     />
-    
+
     <Table
       title="Terrenos Disponibles"
       :terrenos="terrenos.vistalapolcura"
+    />
+
+    <Ubicacion 
+      :mapUrl="projectData.mapUrl"
     />
   </div>
 </template>

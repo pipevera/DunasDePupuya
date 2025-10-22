@@ -14,7 +14,7 @@
       ]">
         <NuxtLink v-for="link in links" :key="link.name" :class="[
           'relative pb-2 transition cursor-pointer group px-2',
-          'before:content-[\'\'] before:absolute before:bottom-0 before:left-0 before:h-[3px] before:bg-yellow-400 before:transition-all before:duration-300',
+          'before:content-[\'\'] before:absolute before:bottom-0 before:left-0 before:h-[3px] before:bg-[#FF5858] before:transition-all before:duration-300',
           activeSection === link.section ? 'before:w-full' : 'before:w-0 hover:before:w-full'
         ]" @click="handleLinkClick(link)">
           {{ link.name }}
@@ -48,7 +48,7 @@
         <div class="absolute top-full left-0 w-full bg-black/40  ">
           <div class="flex flex-col items-center gap-6 text-white font-semibold py-8">
             <NuxtLink v-for="link in links" :key="link.name"
-              class="hover:text-yellow-400 transition text-lg cursor-pointer"
+              class="hover:text-[#FF5858] transition text-lg cursor-pointer"
               @click="handleLinkClick(link)">
               {{ link.name }}
             </NuxtLink>

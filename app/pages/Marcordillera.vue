@@ -23,7 +23,11 @@
   
     <Table
       title="Terrenos Disponibles"
-      :terrenos="terrenos.laaguada"
+      :terrenos="terrenos.marcordillera"
+    />
+
+    <Ubicacion 
+      :mapUrl="projectData.mapUrl"
     />
   </div>
 </template>

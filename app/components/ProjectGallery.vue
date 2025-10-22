@@ -37,7 +37,7 @@
       <div class="mt-6 grid grid-cols-4 md:grid-cols-6 gap-3">
         <div v-for="(image, index) in images" :key="index" @click="currentIndex = index"
           class="relative h-24 rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-105"
-          :class="currentIndex === index ? 'ring-4 ring-amber-300' : 'opacity-70 hover:opacity-100'">
+          :class="currentIndex === index ? 'ring-4 ring-[#FF5858]' : 'opacity-70 hover:opacity-100'">
           <img :src="image" :alt="`Miniatura ${index + 1}`" class="w-full h-full object-cover" />
         </div>
       </div>

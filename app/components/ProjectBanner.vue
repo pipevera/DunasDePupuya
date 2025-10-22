@@ -21,12 +21,12 @@
         <div class="flex items-center justify-center md:justify-end gap-6">
           <!-- Card 1 -->
           <div class="bg-black/20 backdrop-blur-sm shadow-lg w-64 h-28 rounded-2xl p-6 transform transition-all flex flex-col justify-center">
-            <h3 class="text-3xl font-bold text-amber-300 mb-3">30% de pie</h3>
+            <h3 class="text-3xl font-bold text-[#FF5858] mb-3">30% de pie</h3>
           </div>
 
           <!-- Card 2 -->
           <div class="bg-black/20 backdrop-blur-sm shadow-lg w-64 h-28 rounded-2xl p-6 transform transition-all flex flex-col justify-center">
-            <h3 class="text-3xl font-bold text-amber-300 mb-3">48 meses</h3>
+            <h3 class="text-3xl font-bold text-[#FF5858] mb-3">48 meses</h3>
           </div>
         </div>
       </div>

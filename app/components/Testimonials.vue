@@ -14,13 +14,13 @@
         <div 
           v-for="(testimonial, index) in testimonials" 
           :key="index"
-          class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-2 border-amber-100 hover:border-amber-300"
+          class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-2 border-[#FFD1D1] hover:border-[#FF5858]"
         >
           <div class="flex items-center gap-1 mb-4">
             <svg 
               v-for="star in 5" 
               :key="star" 
-              class="w-5 h-5 text-amber-400 fill-current"
+              class="w-5 h-5 text-[#FF5858] fill-current"
               viewBox="0 0 20 20"
             >
               <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
@@ -32,7 +32,7 @@
           </p>
 
           <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-bold text-lg">
+            <div class="w-12 h-12 rounded-full bg-[#FF5858] flex items-center justify-center text-white font-bold text-lg">
               {{ testimonial.initials }}
             </div>
             <div>

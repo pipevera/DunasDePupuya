@@ -26,6 +26,9 @@
       :terrenos="terrenos.elcardal"
     />
 
+    <Ubicacion 
+      :mapUrl="projectData.mapUrl"
+    />
   </div>
 </template>
 
