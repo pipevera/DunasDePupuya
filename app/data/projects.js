@@ -120,14 +120,10 @@ const projects = [
       '/images/proyectos/vistalapolcura/images/terrenos/3.webp',
     ],
     galleryImages: [
-      'https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1200&q=80',
-      'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1200&q=80',
-      'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&q=80',
-      'https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=1200&q=80',
-      'https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=1200&q=80',
-      'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80',
-      'https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=1200&q=80',
-      'https://images.unsplash.com/photo-1476673160081-cf065607f449?w=1200&q=80'
+      '/images/proyectos/vistalapolcura/images/galeria/1.webp',
+      '/images/proyectos/vistalapolcura/images/galeria/2.webp',
+      '/images/proyectos/vistalapolcura/images/galeria/3.webp',
+      '/images/proyectos/vistalapolcura/images/galeria/4.webp',
     ],
     card: '/images/cards/vistalapolcura.webp'
   }

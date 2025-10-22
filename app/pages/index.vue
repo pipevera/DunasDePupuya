@@ -3,6 +3,7 @@
     <HeroSection />
     <CardContainer />
     <Confianza />
+    <Testimonials />
     <Conversemos />
   </div>
 </template>

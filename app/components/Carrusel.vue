@@ -37,7 +37,7 @@
     <Transition name="fade">
       <div v-if="lightboxOpen" class="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center p-4"
         @click="closeLightbox">
-        <button @click="closeLightbox"
+        <button @click.stop="closeLightbox"
           class="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10" aria-label="Cerrar">
           <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -46,7 +46,7 @@
 
         <div class="relative flex items-center justify-center w-full h-full" @click.stop>
           <img :src="images[lightboxIndex]" :alt="`Imagen ${lightboxIndex + 1}`"
-            class="max-w-full max-h-[85vh] object-contain rounded-lg" @click="closeLightbox" />
+            class="max-w-full max-h-[85vh] object-contain rounded-lg" @click.stop />
 
           <button v-if="lightboxIndex > 0" @click.stop="prevLightboxImage"
             class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-4 rounded-full transition-all"

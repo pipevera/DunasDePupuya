@@ -101,6 +101,7 @@ const links = [
   { name: "Home", scroll: true, section: "home" },
   { name: "Proyectos", scroll: true, section: "proyectos" },
   { name: "Sobre Nosotros", scroll: true, section: "nosotros" },
+  { name: "Testimonios", scroll: true, section: "testimonials" },
   { name: "Conversemos", scroll: true, section: "contacto" },
 ]
 
