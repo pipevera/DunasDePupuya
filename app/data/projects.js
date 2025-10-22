@@ -83,11 +83,11 @@ const projects = [
       "Cerca de comercio y servicios"
     ],
     images: [
-      '/images/proyectos/laaguada/images/terrenos/1.webp',
-      '/images/proyectos/laaguada/images/terrenos/2.webp',
-      '/images/proyectos/laaguada/images/terrenos/3.webp',
-      '/images/proyectos/laaguada/images/terrenos/4.webp',
-      '/images/proyectos/laaguada/images/terrenos/5.webp',
+      '/images/proyectos/laaguada/images/galeria/1.webp',
+      '/images/proyectos/laaguada/images/galeria/2.webp',
+      '/images/proyectos/laaguada/images/galeria/3.webp',
+      '/images/proyectos/laaguada/images/galeria/4.webp',
+      '/images/proyectos/laaguada/images/galeria/5.webp',
     ],
     galleryImages: [
       '/images/proyectos/laaguada/images/galeria/1.webp',
@@ -118,8 +118,6 @@ const projects = [
       '/images/proyectos/vistalapolcura/images/terrenos/1.webp',
       '/images/proyectos/vistalapolcura/images/terrenos/2.webp',
       '/images/proyectos/vistalapolcura/images/terrenos/3.webp',
-      '/images/proyectos/vistalapolcura/images/terrenos/4.webp',
-      '/images/proyectos/vistalapolcura/images/terrenos/5.webp',
     ],
     galleryImages: [
       'https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1200&q=80',
