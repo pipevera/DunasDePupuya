@@ -16,15 +16,16 @@
       :images="projectData.images"
     />
 
-    <Table
-      title="Terrenos Disponibles"
-      :terrenos="terrenos.laaguada"
-    />
-
     <ProjectGallery
       title="Galería de Imágenes"
       :images="projectData.galleryImages"
     />
+
+    <Table
+      title="Terrenos Disponibles"
+      :terrenos="terrenos.laaguada"
+    />
+    
   </div>
 </template>
 

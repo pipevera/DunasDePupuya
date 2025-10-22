@@ -16,15 +16,15 @@
       :images="projectData.images"
     />
 
-    <Table
-      title="Terrenos Disponibles"
-      :terrenos="terrenos.marcordillera"
-    />
-
     <ProjectGallery
       title="Donde la montaña, mar y naturaleza se dan la mano."
       :images="projectData.galleryImages"
-    />    
+    />
+  
+    <Table
+      title="Terrenos Disponibles"
+      :terrenos="terrenos.laaguada"
+    />
   </div>
 </template>
 

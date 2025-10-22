@@ -49,14 +49,20 @@ const projects = [
       "A 5 minutos de la playa",
       "Asesoría legal incluida"
     ],
+    images: [
+      '/images/proyectos/elcardal/images/terrenos/1.webp',
+      '/images/proyectos/elcardal/images/terrenos/2.webp',
+      '/images/proyectos/elcardal/images/terrenos/3.webp',
+      '/images/proyectos/elcardal/images/terrenos/4.webp',
+    ],
     galleryImages: [
-      '/images/proyectos/elcardal/images/1.webp',
-      '/images/proyectos/elcardal/images/2.webp',
-      '/images/proyectos/elcardal/images/3.webp',
-      '/images/proyectos/elcardal/images/4.webp',
-      '/images/proyectos/elcardal/images/5.webp',
-      '/images/proyectos/elcardal/images/6.webp',
-      '/images/proyectos/elcardal/images/7.webp',
+      '/images/proyectos/elcardal/images/galeria/1.webp',
+      '/images/proyectos/elcardal/images/galeria/2.webp',
+      '/images/proyectos/elcardal/images/galeria/3.webp',
+      '/images/proyectos/elcardal/images/galeria/4.webp',
+      '/images/proyectos/elcardal/images/galeria/5.webp',
+      '/images/proyectos/elcardal/images/galeria/6.webp',
+      '/images/proyectos/elcardal/images/galeria/7.webp',
     ],
     card: '/images/cards/el-cardal.webp'
   },

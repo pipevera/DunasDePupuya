@@ -16,14 +16,14 @@
       :images="projectData.images"
     />
 
+    <ProjectGallery
+    title="Galería de Imágenes"
+    :images="projectData.galleryImages"
+    />
+    
     <Table
       title="Terrenos Disponibles"
       :terrenos="terrenos.vistalapolcura"
-    />
-
-    <ProjectGallery
-      title="Galería de Imágenes"
-      :images="projectData.galleryImages"
     />
   </div>
 </template>
