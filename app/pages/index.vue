@@ -14,7 +14,7 @@ useSeoMeta({
   description: 'Descubre Dunas de Pupuya: terrenos con vistas al mar y la cordillera, rodeados de naturaleza y tranquilidad. Explora Marcordillera, El Cardal, Vista La Polcura y La Aguada, ideales para vivir o invertir.',
   ogTitle: 'Terrenos en Pupuya con vista al mar | Dunas de Pupuya',
   ogDescription: 'Explora nuestros proyectos en Pupuya: terrenos con vistas panorámicas, naturaleza y acceso a playas y senderos. Encuentra tu lugar ideal para vivir o invertir.',
-  ogImage: '/images/og/home.jpg',
+  ogImage: '/images/cards/marcordillera.webp',
   twitterCard: 'summary_large_image'
 })
 
