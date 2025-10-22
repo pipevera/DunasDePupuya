@@ -7,6 +7,8 @@
         class="relative z-10 flex flex-col justify-between h-full py-32 text-white max-w-7xl mx-auto px-10">
         <div class="max-w-2xl mx-auto" >
           <img :src="logo" alt="Logo" class="w-full h-auto">
+          <h1 class="text-xl font-bold font-Raleway text-center">{{ title }}</h1>
+          <h2 class="text-lg  font-Raleway text-center">{{ description }}</h2>
         </div>
         <div>
           <p class="text-2xl md:text-4xl text-center sm:text-3xl md:text-left font-bold font-Raleway" >Desde {{ value }} UF</p>
@@ -43,6 +45,14 @@ defineProps({
     required: true
   },
   logo: {
+    type: String,
+    required: true
+  },
+  title: {
+    type: String,
+    required: true
+  },
+  description: {
     type: String,
     required: true
   }

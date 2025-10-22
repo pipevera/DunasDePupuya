@@ -4,15 +4,21 @@
       :project="projectData.name" 
       :logo="projectData.logo"
       :value="projectData.value"
+      :title="projectData.title"
       :description="projectData.description" 
     />
 
     <ProjectDescription
-      :title="projectData.title"
+      :title="projectData.projectTitle"
       :logo="projectData.logo"
-      :description="projectData.description"
+      :description="projectData.projectDescription"
       :card="projectData.card"
-      :features="projectData.features"
+      :images="projectData.images"
+    />
+
+    <Table
+      title="Terrenos Disponibles"
+      :terrenos="terrenos.elcardal"
     />
 
     <ProjectGallery
@@ -24,6 +30,7 @@
 
 <script setup>
 import projects from '@/data/projects'
+import terrenos from '@/data/terrenos'
 useSeoMeta({
   title: 'Terrenos en Pupuya listos para construir | El Cardal',
   description: 'Disfruta de la tranquilidad de El Cardal, terrenos amplios en un entorno natural con colinas y praderas. Cercano a caminos principales, playas y servicios de Pupuya, Navidad y Matanzas.',

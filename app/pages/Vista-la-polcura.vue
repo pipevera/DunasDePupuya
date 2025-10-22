@@ -4,15 +4,21 @@
       :project="projectData.name" 
       :logo="projectData.logo"
       :value="projectData.value"
+      :title="projectData.title"
       :description="projectData.description" 
     />
 
     <ProjectDescription
-      :title="projectData.title"
+      :title="projectData.projectTitle"
       :logo="projectData.logo"
-      :description="projectData.description"
+      :description="projectData.projectDescription"
       :card="projectData.card"
-      :features="projectData.features"
+      :images="projectData.images"
+    />
+
+    <Table
+      title="Terrenos Disponibles"
+      :terrenos="terrenos.vistalapolcura"
     />
 
     <ProjectGallery
@@ -24,6 +30,7 @@
 
 <script setup>
 import projects from '@/data/projects'
+import terrenos from '@/data/terrenos'
 useSeoMeta({
   title: 'Terrenos en Pupuya con vista al mar | Vista La Polcura',
   description: 'Vista La Polcura combina serenidad y aventura: terrenos privados cerca de senderos para trekking, ciclismo y deportes acuáticos. Servicios cercanos como colegios y tiendas.',
