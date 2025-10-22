@@ -73,7 +73,7 @@ const activeSection = ref('home')
 const handleScroll = () => {
   scrolled.value = window.scrollY > 400
 
-  const sections = ['home', 'proyectos', 'nosotros', 'contacto']
+  const sections = ['home', 'proyectos', 'nosotros', 'testimonials', 'contacto']
   const scrollPosition = window.scrollY + 100
 
   for (const sectionName of sections) {

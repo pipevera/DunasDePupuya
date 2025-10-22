@@ -1,5 +1,5 @@
 <template>
-  <section id="testimonials" class="py-16 px-8 bg-gradient-to-b from-amber-50 to-white">
+  <section id="testimonials" class="py-16 px-8 bg-gradient-to-b from-amber-50 to-[#FFFDF9]">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-12">
         <h2 class="text-5xl md:text-6xl font-Darina text-gray-800 mb-4">
