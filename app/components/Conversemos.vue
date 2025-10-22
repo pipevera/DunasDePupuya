@@ -1,14 +1,12 @@
 <template>
   <section id="contacto"
     class="relative pb-20 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 overflow-hidden">
-    <!-- Ondas decorativas superiores -->
     <div class="absolute top-0 left-0 right-0 h-40 overflow-hidden">
       <svg class="absolute w-full h-full" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M0,0 C150,80 350,80 600,40 C850,0 1050,0 1200,40 L1200,0 L0,0 Z" fill="white" opacity="0.7" />
       </svg>
     </div>
 
-    <!-- Ondas decorativas inferiores -->
     <div class="absolute bottom-0 left-0 right-0 h-40 overflow-hidden">
       <svg class="absolute w-full h-full" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M0,120 C150,40 350,40 600,80 C850,120 1050,120 1200,80 L1200,120 L0,120 Z" fill="white"
@@ -17,7 +15,6 @@
     </div>
 
     <div class="max-w-7xl mx-auto px-8 relative z-10">
-      <!-- Encabezado -->
       <div class="text-center mb-16">
         <h2 class="text-5xl md:text-6xl font-Darina text-center mb-12 text-gray-800">
           ¿Listo para dar el primer paso?
@@ -28,9 +25,7 @@
         </p>
       </div>
 
-      <!-- Información de contacto -->
       <div class="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
-        <!-- WhatsApp -->
         <a href="https://wa.me/56990023442?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20las%20parcelas."
           target="_blank"
           class="flex items-start gap-4 p-6 bg-white border border-green-300 rounded-xl hover:bg-green-100 transition-all group shadow-md flex-1 min-w-[280px]">
@@ -47,7 +42,6 @@
           </div>
         </a>
 
-        <!-- Teléfono -->
         <div
           class="flex items-start gap-4 p-6 bg-white border border-blue-300 rounded-xl hover:bg-blue-100 transition-all group shadow-md flex-1 min-w-[280px]">
           <div class="bg-blue-500 p-3 rounded-lg group-hover:scale-110 transition-transform">
@@ -59,12 +53,11 @@
           </div>
           <div>
             <p class="font-semibold text-lg text-gray-800">Teléfono</p>
-            <p class="text-gray-700">+56 9 9002 3442</p>
+            <a href="tel:+56990023442" class="text-gray-700">+56 9 9002 3442</a>
             <p class="text-sm text-gray-600 mt-1">Lun - Vie: 9:00 - 18:00</p>
           </div>
         </div>
 
-        <!-- Email -->
         <div
           class="flex items-start gap-4 p-6 bg-white border border-purple-300 hover:bg-purple-100 transition-all group rounded-xl shadow-md flex-1 min-w-[280px]">
           <div class="bg-purple-500 p-3 rounded-lg group-hover:scale-110 transition-transform">
@@ -76,12 +69,11 @@
           </div>
           <div>
             <p class="font-semibold text-lg text-gray-800">Email</p>
-            <p class="text-gray-700">contacto@dunasdepupuya.cl</p>
+            <a href="mailto:srivasl@uft.edu" class="text-gray-700">srivasl@uft.edu</a>
             <p class="text-sm text-gray-600 mt-1">Respuesta en 24 hrs</p>
           </div>
         </div>
 
-        <!-- CTA adicional -->
         <div class="bg-white border border-[#FF5858] ] rounded-xl p-6 shadow-lg w-full">
           <h4 class="text-xl font-bold mb-2 text-gray-800">¿Prefieres visitarnos?</h4>
           <p class="text-gray-700 mb-4">

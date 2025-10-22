@@ -10,7 +10,6 @@
         </p>
       </div>
 
-      <!-- Mapa a lo largo -->
       <div class="rounded-2xl overflow-hidden shadow-xl border-2 border-[#FFD1D1] hover:border-[#FF5858] transition-all">
         <iframe 
           :src="mapUrl"
