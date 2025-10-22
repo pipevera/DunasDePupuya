@@ -1,8 +1,8 @@
 const projects = [
   {
     name: "marcordillera",
-    title: "Marcordillera",
-    description: "Vive rodeado de naturaleza y montañas con acceso directo a la costa",
+    title: "Terrenos en Pupuya con vista al mar y la cordillera",
+    description: "Conecta con la calma del entorno y comienza tu proyecto en terrenos rodeados de verde y aire puro.",
     logo: "/images/proyectos/marcordillera/logo/marcordillera-logo.png",
     value: "1700",
     features: [
@@ -27,8 +27,8 @@ const projects = [
   },
   {
     name: "elcardal",
-    title: "El Cardal",
-    description: "El Cardal es un proyecto inmobiliario ubicado en la hermosa costa de Navidad, diseñado para quienes buscan un refugio junto al mar sin renunciar a la comodidad y seguridad. Nuestras parcelas cuentan con todos los servicios básicos, acceso pavimentado y una ubicación privilegiada a pocos minutos de la playa. Con más de 10 años de experiencia en el mercado, garantizamos un proceso transparente y acompañamiento personalizado en cada etapa de tu inversión.",
+    title: "Terrenos en Pupuya listos para construir tu refugio en la naturaleza",
+    description: "Conecta con la calma del entorno y comienza tu proyecto en terrenos rodeados de verde y aire puro.",
     logo: "/images/proyectos/elcardal/logo/elcardal-logo.png",
     value: "1700",
     features: [
@@ -53,8 +53,8 @@ const projects = [
   },
   {
     name: "laaguada",
-    title: "La Aguada",
-    description: "La Aguada es el proyecto ideal para familias que buscan un lugar seguro y acogedor cerca del mar, con todas las comodidades modernas. Ubicado en una zona consolidada de la costa de Navidad, ofrece tranquilidad, seguridad y una comunidad establecida de vecinos. Perfecto para construir tu casa de veraneo o tu hogar permanente junto al mar, con acceso a servicios y comercio cercano.",
+    title: "Terrenos en Pupuya rodeados de naturaleza, a minutos del mar y a solo 2 horas de Santiago",
+    description: "Terrenos de 5.000 m² con vista al valle y al mar, a pasos de Matanzas y con financiamiento directo.",
     logo: "/images/proyectos/laaguada/logo/laaguada-logo.png",
     value: "1700",
     features: [
@@ -79,8 +79,8 @@ const projects = [
   },
   {
     name: "vistalapolcura",
-    title: "Vista La Polcura",
-    description: "Vista La Polcura es nuestro proyecto más exclusivo, diseñado para quienes buscan una experiencia de vida única frente al mar. Con vistas panorámicas inigualables al océano Pacífico, cada parcela ha sido cuidadosamente seleccionada para maximizar tu conexión con el entorno marino. Un lugar donde cada amanecer y atardecer se convierten en un espectáculo natural desde la comodidad de tu propio terreno.",
+    title: "Terrenos en Pupuya con vista al mar, en una zona con gran proyección del litoral central",
+    description: "Invierte en terrenos únicos frente al mar y asegura tu lugar en una de las zonas con mayor crecimiento del litoral central.",
     logo: "/images/proyectos/vistalapolcura/logo/vistalapolcura-logo.png",
     value: "1700",
     features: [

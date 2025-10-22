@@ -1,6 +1,15 @@
 export default defineNuxtConfig({
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'out-in' },
+     head: {
+      title: 'Dunas de Pupuya',
+      htmlAttrs: {
+        lang: 'es',
+      },
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ],
+    },
   },
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },

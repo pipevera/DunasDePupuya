@@ -17,9 +17,9 @@
           </h1>
           
           <div class="space-y-4 text-gray-700">
-            <p class="text-lg leading-relaxed">
+            <h2 class="text-lg leading-relaxed">
               {{ description }}
-            </p>
+            </h2>
           </div>
 
           <!-- Features opcionales -->

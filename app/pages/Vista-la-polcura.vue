@@ -24,6 +24,23 @@
 
 <script setup>
 import projects from '@/data/projects'
+useSeoMeta({
+  title: 'Terrenos en Pupuya con vista al mar | Vista La Polcura',
+  description: 'Vista La Polcura combina serenidad y aventura: terrenos privados cerca de senderos para trekking, ciclismo y deportes acuáticos. Servicios cercanos como colegios y tiendas.',
+  ogTitle: 'Terrenos en Pupuya con vista al mar | Vista La Polcura',
+  ogDescription: 'Terrenos en Vista La Polcura donde la naturaleza y la vida activa se unen. Perfecto para quienes buscan privacidad, deporte y conexión con la comunidad.',
+  ogImage: '/images/proyectos/vista-la-polcura.jpg',
+  twitterCard: 'summary_large_image'
+})
 
+useHead({
+  link: [{ rel: 'canonical', href: 'https://www.dunasdepupuya.cl/vista-la-polcura' }],
+  meta: [
+    { name: 'keywords', content: 'terrenos en Pupuya, Vista La Polcura, terrenos con vista al mar, inversión Pupuya' },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'author', content: 'Dunas de Pupuya' },
+    { name: 'publisher', content: 'Dunas de Pupuya' }
+  ]
+})
 const projectData = projects.find(p => p.name === 'vistalapolcura')
 </script>
