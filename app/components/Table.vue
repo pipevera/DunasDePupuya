@@ -5,7 +5,7 @@
         {{ title }}
       </h2>
 
-      <div class="flex flex-wrap gap-2">
+      <div class="flex flex-wrap justify-center gap-2">
         <div 
           v-for="(terreno, index) in terrenos" 
           :key="index"
@@ -19,9 +19,12 @@
           
           <template v-else>
             <span class="flex items-center justify-center w-6 h-6 rounded-full bg-[#FF5858] text-white font-bold text-xs">{{ terreno.numero }}</span>
-            <span class="text-[#FF5858] font-bold">{{ terreno.valor.toLocaleString('es-CL') }} UF</span>
-            <span class="text-gray-400">/</span>
-            <span class="text-gray-600">{{ terreno.m2.toLocaleString('es-CL') }} m²</span>
+            <span class="text-[#FF5858] font-bold">{{ formatValor(terreno.valor) }}</span>
+            <div v-if="terreno.m2" >
+              <span class="text-gray-400">/</span>
+              <span class="text-gray-600">{{ terreno.m2.toLocaleString('es-CL') }} m²</span>
+
+            </div>
           </template>
         </div>
       </div>
@@ -62,4 +65,18 @@ const props = defineProps({
     default: () => []
   }
 })
+
+const formatValor = (valor) => {
+  if (valor === 'vendida' || valor === '' || valor == null) return ''
+  const num = typeof valor === 'number' ? valor : Number(valor)
+  if (Number.isNaN(num)) return String(valor)
+  if (num >= 10000) {
+    try {
+      return num.toLocaleString('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 })
+    } catch (e) {
+      return `$ ${num.toLocaleString('es-CL')}`
+    }
+  }
+  return `${num.toLocaleString('es-CL', { maximumFractionDigits: 0 })} UF`
+}
 </script>
