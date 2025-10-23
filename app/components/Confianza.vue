@@ -6,7 +6,7 @@
     <div class="absolute top-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-amber-50 via-amber-50/50 to-transparent">
     </div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-8">
+    <div class="relative z-20 max-w-7xl mx-auto py-12 px-8">
       <h2
         class="text-4xl md:text-5xl lg:text-6xl text-white font-Sans text-start text-balance md:text-start mb-16 md:mb-24 font-Raleway">
         Confianza y facilidades reales para que tu compra sea simple
@@ -33,5 +33,6 @@
         </div>
       </div>
     </div>
+    <div class="absolute bottom-0 left-0 right-0 h-40 z-10 bg-gradient-to-b from-transparent via-amber-50/50 to-amber-50"></div>
   </section>
 </template>
