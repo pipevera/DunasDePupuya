@@ -11,7 +11,7 @@
           <h2 class="text-lg  font-Raleway text-center">{{ description }}</h2>
         </div>
         <div>
-          <p class="text-2xl md:text-4xl text-center sm:text-3xl md:text-left font-bold font-Raleway" >Desde {{ value }} UF</p>
+         <!--  <p class="text-2xl md:text-4xl text-center sm:text-3xl md:text-left font-bold font-Raleway" >Desde {{ value }} UF</p> -->
         </div>
       </div>
     </section>

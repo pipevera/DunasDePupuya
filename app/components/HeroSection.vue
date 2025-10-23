@@ -7,7 +7,7 @@
     <div class="absolute inset-0 bg-black/30"></div>
 
     <div
-      class="relative z-10 flex flex-col items-center justify-center h-full text-white max-w-4xl mx-auto text-center space-y-16 px-8">
+      class="relative z-10 flex flex-col items-center justify-center h-full text-white max-w-4xl mx-auto text-center space-y-6 px-8">
       
       <h1 class="text-5xl md:text-[80px] font-thin font-Darina leading-none text-balance md:text-pretty">
         Tener un lugar en la costa, no es un sueño, es una decisión
@@ -18,7 +18,7 @@
       </p>
       <button 
         @click="scrollToProyectos" 
-        class="bg-red-500 hover:bg-red-600 px-6 py-3 rounded-full shadow-xl hover:scale-105 transition-all duration-300 font-medium"
+        class="bg-red-500 hover:bg-red-600 px-6 py-3 rounded-full shadow-xl hover:scale-105 transition-all duration-300 font-medium "
       >
         VER PARCELAS
       </button>
