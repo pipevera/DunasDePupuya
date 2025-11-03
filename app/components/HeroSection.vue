@@ -7,10 +7,10 @@
     <div class="absolute inset-0 bg-black/30"></div>
 
     <div
-      class="relative z-10 flex flex-col items-center justify-center h-full text-white max-w-4xl mx-auto text-center space-y-6 px-8">
+      class="relative z-10 flex flex-col items-center justify-center h-full text-white max-w-5xl mx-auto text-center space-y-6 px-8">
       
-      <h1 class="text-5xl md:text-[80px] font-thin font-Darina leading-none text-balance md:text-pretty">
-        Tener un lugar en la costa, no es un sueño, es una decisión
+      <h1 class="text-5xl md:text-[80px] font-thin font-Darina leading-none ">
+        Tener un lugar en la costa, <br> no es un sueño, es una decisión.
       </h1>
       <p class="text-base md:text-xl font-light text-balance max-w-3xl">
         Más de 40 parcelas entregadas en la Costa de Navidad nos avalan. 
@@ -23,7 +23,7 @@
         VER PARCELAS
       </button>
     </div>
-    <div class="absolute bottom-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-transparent via-amber-50/50 to-amber-50"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-transparent to-[#F0EAEC]"></div>
   </section>
 </template>
 

@@ -1,18 +1,19 @@
 <template>
-  <section id="proyectos" class="relative py-16 md:py-24 bg-amber-50">
+  <section id="proyectos"
+    class="relative py-16 md:py-24 bg-[url('/images/cardContainer/nuestrasparcelas.webp')] bg-fixed bg-cover bg-center">
+    <div class="absolute inset-0 bg-black/20"></div>
+    <div class="absolute top-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-[#F0EAEC] to-transparent">
+    </div>
     <div class="max-w-7xl mx-auto px-8">
-      <h2 class="text-5xl md:text-6xl font-Darina text-center mb-12 text-gray-800">
+      <h2 class="text-5xl md:text-6xl font-Darina text-center mb-12 text-white relative z-10">
         Nuestras Parcelas
       </h2>
-      
+
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-10">
-        <ParcelaCard 
-          v-for="parcela in parcelas" 
-          :key="parcela.id" 
-          :parcela="parcela" 
-        />
+        <ParcelaCard v-for="parcela in parcelas" :key="parcela.id" :parcela="parcela" />
       </div>
     </div>
+    <div class="absolute bottom-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-transparent to-[#F0EAEC]"></div>
   </section>
 </template>
 
