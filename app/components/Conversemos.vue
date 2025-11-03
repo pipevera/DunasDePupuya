@@ -1,6 +1,6 @@
 <template>
   <section id="contacto"
-    class="relative pb-20 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 overflow-hidden">
+    class="relative pb-20 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 overflow-hidden py-16">
     <div class="absolute top-0 left-0 right-0 h-40 overflow-hidden">
       <svg class="absolute w-full h-full" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M0,0 C150,80 350,80 600,40 C850,0 1050,0 1200,40 L1200,0 L0,0 Z" fill="white" opacity="0.7" />

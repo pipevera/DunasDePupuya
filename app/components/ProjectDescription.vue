@@ -7,9 +7,9 @@
         </div>
 
         <div class="order-1 md:order-2">
-          <h1 class="text-5xl md:text-6xl font-Darina mb-12 text-gray-800">
+          <h2 class="text-5xl md:text-6xl font-Darina mb-12 text-gray-800">
             {{ title }}
-          </h1>
+          </h2>
           
           <div class="space-y-4 text-gray-700">
             <h2 class="text-lg leading-relaxed">

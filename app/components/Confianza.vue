@@ -26,9 +26,9 @@
           </p>
         </div>
         <div class="w-full md:w-2/3">
-          <div class="rounded-2xl overflow-hidden shadow-2xl">
-            <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&q=80" alt="Familia en la playa"
-              class="w-full h-64 md:h-80 object-cover" />
+          <div class="rounded-2xl w-full h-64 md:h-80 overflow-hidden shadow-2xl">
+            <NuxtImg loading="lazy" src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&q=80" alt="Familia en la playa"
+              class="object-cover w-full h-full"  />
           </div>
         </div>
       </div>

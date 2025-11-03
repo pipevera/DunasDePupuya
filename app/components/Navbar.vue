@@ -5,8 +5,8 @@
   ]">
     <div class="flex items-center justify-between  max-w-7xl mx-auto px-8 h-full">
       <NuxtLink to="/" class="cursor-pointer relative right-8 md:right-10">
-        <img v-if="scrolled" class="w-[300px] md:w-[400px]" src="/images/logo/logodunas-negro.png" alt="Logo Dunas de Pupuya" />
-        <img v-else class="w-[300px] md:w-[400px]" src="/images/logo/logodunas-blanco.png" alt="Logo Dunas de Pupuya" />
+        <NuxtImg v-if="scrolled" width="300" height="auto" src="/images/logo/logodunas-negro.png" alt="Logo Dunas de Pupuya" title="Logo Dunas de Pupuya" />
+        <NuxtImg v-else width="300" height="auto" src="/images/logo/logodunas-blanco.png" alt="Logo Dunas de Pupuya" title="Logo Dunas de Pupuya" />
       </NuxtLink>
       <div :class="[
         'hidden md:flex gap-8 font-semibold transition-colors duration-300',
