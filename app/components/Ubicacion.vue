@@ -11,7 +11,8 @@
       </div>
 
       <div class="rounded-2xl overflow-hidden shadow-xl border-2 border-[#FFD1D1] hover:border-[#FF5858] transition-all">
-        <iframe 
+        <iframe
+          title="Mapa ubicacíon"
           :src="mapUrl"
           width="100%" 
           height="500" 

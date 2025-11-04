@@ -8,6 +8,7 @@
     </div>  
     <div class="w-full shadow-xl rounded-2xl relative max-w-7xl mx-auto">
       <iframe 
+        title="Tour virtual 360"
         :src="tour" 
         class="w-full rounded-2xl"
         width="100%" 

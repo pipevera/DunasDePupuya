@@ -5,7 +5,7 @@
       <div class="relative">
         <div class="relative h-64 overflow-hidden rounded-2xl shadow-xl">
           <Transition name="fade-smooth">
-            <img :key="currentIndex" :src="images[currentIndex]" :alt="`Imagen ${currentIndex + 1}`"
+            <NuxtImg quality="80" :key="currentIndex" :src="images[currentIndex]" :alt="`Imagen ${currentIndex + 1}`"
               class="absolute inset-0 w-full h-full object-cover cursor-pointer" @click="openLightbox(currentIndex)" />
           </Transition>
         </div>
@@ -35,7 +35,7 @@
         <div v-for="(image, index) in images" :key="index" @click="handleManualChange(() => currentIndex = index)"
           class="relative h-10 rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-105"
           :class="currentIndex === index ? 'ring-4 ring-[#FF5858]' : 'opacity-70 hover:opacity-100'">
-          <img :src="image" :alt="`Miniatura ${index + 1}`" class="w-full h-full object-cover" />
+          <NuxtImg :src="image" :alt="`Miniatura ${index + 1}`" width="137" height="102" placeholder="blur" class=""/>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@
 
           <div class="flex flex-col items-center w-full h-full" @click.stop>
             <div class="relative flex-1 flex items-center justify-center w-full" @click="closeLightbox">
-              <img :src="images[lightboxIndex]" :alt="`Imagen ${lightboxIndex + 1}`"
+              <NuxtImg :src="images[lightboxIndex]" :alt="`Imagen ${lightboxIndex + 1}`"
                 class="max-w-full max-h-[70vh] object-contain rounded-lg" @click.stop />
 
 
@@ -79,7 +79,7 @@
                 <div v-for="(image, index) in images" :key="index" @click="lightboxIndex = index"
                   class="relative h-20 w-20 flex-shrink-0 rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-105"
                   :class="lightboxIndex === index ? 'ring-4 ring-[#FF5858]' : 'opacity-60 hover:opacity-100'">
-                  <img :src="image" :alt="`Miniatura ${index + 1}`" class="w-full h-full object-cover" />
+                  <NuxtImg quality="80" :src="image" :alt="`Miniatura ${index + 1}`" width="80" height="80" />
                 </div>
               </div>
             </div>
