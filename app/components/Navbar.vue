@@ -45,7 +45,7 @@
 
     <transition name="slide-fade">
       <div v-if="isOpen" class="md:hidden absolute top-full left-0 w-full">
-        <div :class="scrolled ? 'bg-white/60 backdrop-blur-md text-gray-800' : 'bg-black/20 backdrop-blur-md md:bg-transparent text-white'" class="h-full w-full bg-black/90 backdrop-blur-md ">
+        <div :class="scrolled ? 'bg-white/60 backdrop-blur-md text-gray-800' : 'bg-black/20 backdrop-blur-md text-white'" class="h-full w-full ">
           <div class="flex flex-col items-center gap-6  font-semibold py-8">
             <NuxtLink v-for="link in links" :key="link.name"
               class="hover:text-[#FF5858] transition text-lg cursor-pointer"

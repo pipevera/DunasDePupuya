@@ -5,7 +5,7 @@
       <div class="relative">
         <div class="relative h-64 overflow-hidden rounded-2xl shadow-xl">
           <Transition name="fade-smooth">
-            <NuxtImg quality="80" :key="currentIndex" :src="images[currentIndex]" :alt="`Imagen ${currentIndex + 1}`"
+            <img :key="currentIndex" :src="images[currentIndex]" :alt="`Imagen ${currentIndex + 1}`"
               class="absolute inset-0 w-full h-full object-cover cursor-pointer" @click="openLightbox(currentIndex)" />
           </Transition>
         </div>

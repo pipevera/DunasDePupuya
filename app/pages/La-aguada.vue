@@ -13,11 +13,6 @@
       :logo="projectData.logo"
       :description="projectData.projectDescription"
       :card="projectData.card"
-      :images="projectData.images"
-    />
-
-    <ProjectGallery
-      title="Galería de Imágenes"
       :images="projectData.galleryImages"
     />
 
