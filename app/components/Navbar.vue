@@ -44,9 +44,9 @@
     </div>
 
     <transition name="slide-fade">
-      <div v-if="isOpen" class="md:hidden">
-        <div class="absolute top-full left-0 w-full  bg-black/40 backdrop-blur-md ">
-          <div class="flex flex-col items-center gap-6 text-white font-semibold py-8">
+      <div v-if="isOpen" class="md:hidden absolute top-full left-0 w-full">
+        <div :class="scrolled ? 'bg-white/60 backdrop-blur-md text-gray-800' : 'bg-black/20 backdrop-blur-md md:bg-transparent text-white'" class="h-full w-full bg-black/90 backdrop-blur-md ">
+          <div class="flex flex-col items-center gap-6  font-semibold py-8">
             <NuxtLink v-for="link in links" :key="link.name"
               class="hover:text-[#FF5858] transition text-lg cursor-pointer"
               @click="handleLinkClick(link)">
@@ -101,7 +101,6 @@ const links = [
   { name: "Home", scroll: true, section: "home" },
   { name: "Proyectos", scroll: true, section: "proyectos" },
   { name: "Sobre Nosotros", scroll: true, section: "nosotros" },
-  { name: "Testimonios", scroll: true, section: "testimonials" },
   { name: "Conversemos", scroll: true, section: "contacto" },
 ]
 
