@@ -4,7 +4,7 @@
     <div class="max-w-7xl mx-auto">
       <div class="relative">
         <div class="relative h-64 overflow-hidden rounded-2xl shadow-xl">
-          <Transition :name="slideDirection">
+          <Transition name="fade-smooth">
             <img :key="currentIndex" :src="images[currentIndex]" :alt="`Imagen ${currentIndex + 1}`"
               class="absolute inset-0 w-full h-full object-cover cursor-pointer" @click="openLightbox(currentIndex)" />
           </Transition>
@@ -78,7 +78,7 @@
               <div class="flex gap-2 overflow-x-auto py-2 justify-center">
                 <div v-for="(image, index) in images" :key="index" @click="lightboxIndex = index"
                   class="relative h-20 w-20 flex-shrink-0 rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-105"
-                  :class="lightboxIndex === index ? 'ring-4 ring-amber-300' : 'opacity-60 hover:opacity-100'">
+                  :class="lightboxIndex === index ? 'ring-4 ring-[#FF5858]' : 'opacity-60 hover:opacity-100'">
                   <img :src="image" :alt="`Miniatura ${index + 1}`" class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -102,16 +102,13 @@ const props = defineProps({
 const currentIndex = ref(0)
 const lightboxOpen = ref(false)
 const lightboxIndex = ref(0)
-const slideDirection = ref('slide-left')
 let autoplayInterval = null
 
 const nextImage = () => {
-  slideDirection.value = 'slide-left'
   currentIndex.value = (currentIndex.value + 1) % props.images.length
 }
 
 const prevImage = () => {
-  slideDirection.value = 'slide-right'
   currentIndex.value = currentIndex.value === 0 ? props.images.length - 1 : currentIndex.value - 1
 }
 
@@ -191,41 +188,14 @@ onMounted(() => {
   opacity: 0;
 }
 
-/* Slide de izquierda a derecha (siguiente) */
-.slide-left-enter-active {
-  transition: transform 0.5s ease-out;
-  z-index: 2;
+/* Fade suave para el carrusel */
+.fade-smooth-enter-active,
+.fade-smooth-leave-active {
+  transition: opacity 0.4s ease-in-out;
 }
 
-.slide-left-leave-active {
-  transition: transform 0.5s ease-out;
-  z-index: 1;
-}
-
-.slide-left-enter-from {
-  transform: translateX(100%);
-}
-
-.slide-left-leave-to {
-  transform: translateX(-100%);
-}
-
-/* Slide de derecha a izquierda (anterior) */
-.slide-right-enter-active {
-  transition: transform 0.5s ease-out;
-  z-index: 2;
-}
-
-.slide-right-leave-active {
-  transition: transform 0.5s ease-out;
-  z-index: 1;
-}
-
-.slide-right-enter-from {
-  transform: translateX(-100%);
-}
-
-.slide-right-leave-to {
-  transform: translateX(100%);
+.fade-smooth-enter-from,
+.fade-smooth-leave-to {
+  opacity: 0;
 }
 </style>

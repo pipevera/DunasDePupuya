@@ -1,5 +1,5 @@
 <template>
-  <section class="relative pb-12 pt-20 px-8 bg-amber-50 ">
+  <section class="relative pb-12 pt-20 px-8 bg-gradient-to-t from-[#EFE9EB] to-white ">
     <div class="max-w-7xl mx-auto relative z-10">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class=" order-2 md:order-1">

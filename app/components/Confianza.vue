@@ -3,7 +3,7 @@
     class="relative bg-[url('/images/confianza/confianza-background.webp')] pb-20 pt-20 md:pt-40 bg-cover bg-center md:bg-fixed">
     <div class="absolute inset-0 bg-black/40"></div>
 
-    <div class="absolute top-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-[#F0EAEC] to-transparent">
+    <div class="absolute top-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-[#EFE9EB] to-transparent">
     </div>
 
     <div class="relative z-20 max-w-7xl mx-auto py-12 px-8">

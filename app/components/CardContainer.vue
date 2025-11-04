@@ -2,7 +2,7 @@
   <section id="proyectos"
     class="relative py-20 md:py-40 bg-[url('/images/cardContainer/nuestrasparcelas.webp')] bg-fixed bg-cover bg-center">
     <div class="absolute inset-0 bg-black/20"></div>
-    <div class="absolute top-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-[#F0EAEC] to-transparent">
+    <div class="absolute top-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-[#EFE9EB] to-transparent">
     </div>
     <div class="max-w-7xl mx-auto px-8">
       <h2 class="text-5xl md:text-6xl font-Darina text-center mb-12 text-white relative z-10">
@@ -13,7 +13,7 @@
         <ParcelaCard v-for="parcela in parcelas" :key="parcela.id" :parcela="parcela" />
       </div>
     </div>
-    <div class="absolute bottom-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-transparent to-[#F0EAEC]"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-transparent to-[#EFE9EB]"></div>
   </section>
 </template>
 
