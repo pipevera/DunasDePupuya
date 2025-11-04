@@ -17,21 +17,15 @@ const projects = [
       "Camino de acceso consolidado",
       "Entorno natural protegido"
     ],
-    images: [
-      '/images/proyectos/marcordillera/images/terrenos/1.webp',
-      '/images/proyectos/marcordillera/images/terrenos/2.webp',
-      '/images/proyectos/marcordillera/images/terrenos/3.webp',
-      '/images/proyectos/marcordillera/images/terrenos/4.webp',
-    ],
     galleryImages: [
-      '/images/proyectos/marcordillera/images/galeria/1.webp',
-      '/images/proyectos/marcordillera/images/galeria/2.webp',
-      '/images/proyectos/marcordillera/images/galeria/3.webp',
-      '/images/proyectos/marcordillera/images/galeria/4.webp',
-      '/images/proyectos/marcordillera/images/galeria/5.webp',
-      '/images/proyectos/marcordillera/images/galeria/6.webp',
-      '/images/proyectos/marcordillera/images/galeria/7.webp',
-      '/images/proyectos/marcordillera/images/galeria/8.webp',
+      '/images/proyectos/marcordillera/galeria/1.webp',
+      '/images/proyectos/marcordillera/galeria/2.webp',
+      '/images/proyectos/marcordillera/galeria/3.webp',
+      '/images/proyectos/marcordillera/galeria/4.webp',
+      '/images/proyectos/marcordillera/galeria/5.webp',
+      '/images/proyectos/marcordillera/galeria/6.webp',
+      '/images/proyectos/marcordillera/galeria/7.webp',
+      '/images/proyectos/marcordillera/galeria/8.webp',
     ],
     card: '/images/cards/marcordillera.webp'
   },
@@ -53,20 +47,14 @@ const projects = [
       "A 5 minutos de la playa",
       "Asesoría legal incluida"
     ],
-    images: [
-      '/images/proyectos/elcardal/images/terrenos/1.webp',
-      '/images/proyectos/elcardal/images/terrenos/2.webp',
-      '/images/proyectos/elcardal/images/terrenos/3.webp',
-      '/images/proyectos/elcardal/images/terrenos/4.webp',
-    ],
     galleryImages: [
-      '/images/proyectos/elcardal/images/galeria/1.webp',
-      '/images/proyectos/elcardal/images/galeria/2.webp',
-      '/images/proyectos/elcardal/images/galeria/3.webp',
-      '/images/proyectos/elcardal/images/galeria/4.webp',
-      '/images/proyectos/elcardal/images/galeria/5.webp',
-      '/images/proyectos/elcardal/images/galeria/6.webp',
-      '/images/proyectos/elcardal/images/galeria/7.webp',
+      '/images/proyectos/elcardal/galeria/1.webp',
+      '/images/proyectos/elcardal/galeria/2.webp',
+      '/images/proyectos/elcardal/galeria/3.webp',
+      '/images/proyectos/elcardal/galeria/4.webp',
+      '/images/proyectos/elcardal/galeria/5.webp',
+      '/images/proyectos/elcardal/galeria/6.webp',
+      '/images/proyectos/elcardal/galeria/7.webp',
     ],
     card: '/images/cards/el-cardal.webp'
   },
@@ -86,19 +74,12 @@ const projects = [
       "A 3 minutos de la playa",
       "Cerca de comercio y servicios"
     ],
-    images: [
-      '/images/proyectos/laaguada/images/galeria/1.webp',
-      '/images/proyectos/laaguada/images/galeria/2.webp',
-      '/images/proyectos/laaguada/images/galeria/3.webp',
-      '/images/proyectos/laaguada/images/galeria/4.webp',
-      '/images/proyectos/laaguada/images/galeria/5.webp',
-    ],
     galleryImages: [
-      '/images/proyectos/laaguada/images/galeria/1.webp',
-      '/images/proyectos/laaguada/images/galeria/2.webp',
-      '/images/proyectos/laaguada/images/galeria/3.webp',
-      '/images/proyectos/laaguada/images/galeria/4.webp',
-      '/images/proyectos/laaguada/images/galeria/5.webp',
+      '/images/proyectos/laaguada/galeria/1.webp',
+      '/images/proyectos/laaguada/galeria/2.webp',
+      '/images/proyectos/laaguada/galeria/3.webp',
+      '/images/proyectos/laaguada/galeria/4.webp',
+      '/images/proyectos/laaguada/galeria/5.webp',
     ],
     card: '/images/cards/la-aguada.webp'
   },
@@ -120,16 +101,11 @@ const projects = [
       "Acceso directo a la playa",
       "Zona de alto valor turístico"
     ],
-    images: [
-      '/images/proyectos/vistalapolcura/images/terrenos/1.webp',
-      '/images/proyectos/vistalapolcura/images/terrenos/2.webp',
-      '/images/proyectos/vistalapolcura/images/terrenos/3.webp',
-    ],
     galleryImages: [
-      '/images/proyectos/vistalapolcura/images/galeria/1.webp',
-      '/images/proyectos/vistalapolcura/images/galeria/2.webp',
-      '/images/proyectos/vistalapolcura/images/galeria/3.webp',
-      '/images/proyectos/vistalapolcura/images/galeria/4.webp',
+      '/images/proyectos/vistalapolcura/galeria/1.webp',
+      '/images/proyectos/vistalapolcura/galeria/2.webp',
+      '/images/proyectos/vistalapolcura/galeria/3.webp',
+      '/images/proyectos/vistalapolcura/galeria/4.webp',
     ],
     card: '/images/cards/vistalapolcura.webp'
   }
