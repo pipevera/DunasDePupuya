@@ -1,6 +1,6 @@
 <template>
   <section id="proyectos"
-    class="relative py-20 md:py-40 bg-[url('/images/cardContainer/nuestrasparcelas.webp')] bg-fixed bg-cover bg-center">
+    class="relative py-20 md:py-40 bg-[url('/images/cardContainer/nuestrasparcelas.webp')] bg-center sm:bg-fixed bg-cover ">
     <div class="absolute inset-0 bg-black/20"></div>
     <div class="absolute top-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-[#EFE9EB] to-transparent">
     </div>

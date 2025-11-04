@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="parcela.route" class="bg-black/5 backdrop-blur-md rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+  <NuxtLink :to="parcela.route" class="bg-black/5 backdrop-blur-md rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
     <div class="h-40 max-h-40 w-full overflow-hidden">
       <NuxtImg 
         :src="parcela.imagen" 
