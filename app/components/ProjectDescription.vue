@@ -2,12 +2,12 @@
   <section class="relative pb-12 pt-20 px-8 bg-amber-50 ">
     <div class="max-w-7xl mx-auto relative z-10">
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="hidden md:block order-2 md:order-1">
-          <Carrusel :images="images" />
+        <div class=" order-2 md:order-1">
+          <Lightbox :images="images" />
         </div>
 
         <div class="order-1 md:order-2">
-          <h2 class="text-5xl md:text-6xl font-Darina mb-12 text-gray-800">
+          <h2 class="text-5xl md:text-6xl text-center md:text-start font-Darina mb-12 text-gray-800">
             {{ title }}
           </h2>
           
@@ -38,6 +38,8 @@
 </template>
 
 <script setup>
+import Lightbox from './Lightbox.vue';
+
 const props = defineProps({
   title: {
     type: String,

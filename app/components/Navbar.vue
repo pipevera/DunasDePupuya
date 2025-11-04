@@ -45,7 +45,7 @@
 
     <transition name="slide-fade">
       <div v-if="isOpen" class="md:hidden">
-        <div class="absolute top-full left-0 w-full bg-black/40  ">
+        <div class="absolute top-full left-0 w-full  bg-black/40 backdrop-blur-md ">
           <div class="flex flex-col items-center gap-6 text-white font-semibold py-8">
             <NuxtLink v-for="link in links" :key="link.name"
               class="hover:text-[#FF5858] transition text-lg cursor-pointer"

@@ -13,12 +13,11 @@
       :logo="projectData.logo"
       :description="projectData.projectDescription"
       :card="projectData.card"
-      :images="projectData.images"
+      :images="projectData.galleryImages"
     />
 
-    <ProjectGallery
-      title="Donde la montaña, mar y naturaleza se dan la mano."
-      :images="projectData.galleryImages"
+    <Vista360
+      :tour="projectData.tour"
     />
   
     <Table

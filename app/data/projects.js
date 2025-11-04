@@ -8,6 +8,7 @@ const projects = [
     projectDescription: "Imagina despertar cada mañana con el sonido de las olas y la vista de los cerros que se funden en el horizonte. En Marcordillera, ese sueño puede ser tu realidad. Ubicado en la tranquila zona de Navidad, con terrenos amplios y bien ubicados, ideales para construir el hogar que siempre pensaste en el mar.",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17558.438711789488!2d-71.84241599892918!3d-33.98431484509994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663d17213ec0a05%3A0x16c5d11566dd8fc2!2sMAR%20CORDILLERA!5e1!3m2!1ses-419!2scl!4v1761129839606!5m2!1ses-419!2sc",
     value: "1700",
+    tour: "https://imaxphere.com/marcordillera/",
     features: [
       "Parcelas desde 8.000 m²",
       "Vista a la cordillera y al mar",
@@ -43,6 +44,7 @@ const projects = [
     projectDescription: "Imagina un lugar donde la tranquilidad no es un lujo, sino parte de tu día a día. El Cardal te invita a vivir rodeado de verdes praderas, colinas suaves y senderos que despiertan tus sentidos.",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25780.863747649637!2d-71.838983!3d-33.972649!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663d10009f6e8bd%3A0x8b58d99062b1556b!2sLoteo%20El%20Cardal!5e1!3m2!1ses-419!2scl!4v1761129366738!5m2!1ses-419!2scl",
     value: "1700",
+    tour: "https://imaxphere.com/elcardal/",
     features: [
       "Parcelas desde 5.000 m²",
       "Financiamiento flexible hasta 36 meses",
@@ -109,6 +111,7 @@ const projects = [
     projectDescription: "¿Buscas un lugar donde la serenidad del campo se combine con la emoción de la vida activa? Aquí al salir de tu casa tienes a tu alcance senderos para trekking, rutas para ciclismo de montaña, lugares para practicar deportes de agua en playas cercanas o una caminata al atardecer al humedal. Cada rincón del terreno está pensado para que la naturaleza y la vida 4x4 convivan de manera armoniosa.",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8258.137128510198!2d-71.88476410703645!3d-34.04218099496343!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663d9271a6c0e35%3A0x8453f75612471656!2sCondominio%20Vista%20La%20Polcura!5e1!3m2!1ses-419!2scl!4v1761129559350!5m2!1ses-419!2scl",
     value: "1700",
+    tour: "https://imaxphere.com/vistalapolcura/",
     features: [
       "Parcelas premium desde 6.000 m²",
       "Vista panorámica al océano",
