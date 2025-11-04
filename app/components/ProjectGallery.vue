@@ -38,7 +38,7 @@
         <div v-for="(image, index) in images" :key="index" @click="currentIndex = index"
           class="relative h-24 rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-105"
           :class="currentIndex === index ? 'ring-4 ring-[#FF5858]' : 'opacity-70 hover:opacity-100'">
-          <NuxtImg :src="image" :alt="`Miniatura ${index + 1}`" width="137" height="102" placeholder="blur"  />
+          <NuxtImg :src="image" :alt="`Miniatura ${index + 1}`" width="137" height="102"  />
         </div>
       </div>
     </div>
