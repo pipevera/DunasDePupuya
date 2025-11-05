@@ -35,7 +35,7 @@
         <div v-for="(image, index) in images" :key="index" @click="handleManualChange(() => currentIndex = index)"
           class="relative h-10 rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-105"
           :class="currentIndex === index ? 'ring-4 ring-[#FF5858]' : 'opacity-70 hover:opacity-100'">
-          <NuxtImg :src="image" :alt="`Miniatura ${index + 1}`" width="137" height="102"/>
+          <img :src="image" :alt="`Miniatura ${index + 1}`" width="137" height="102" class="w-full h-full object-cover"/>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@
 
           <div class="flex flex-col items-center w-full h-full" @click.stop>
             <div class="relative flex-1 flex items-center justify-center w-full" @click="closeLightbox">
-              <NuxtImg :src="images[lightboxIndex]" :alt="`Imagen ${lightboxIndex + 1}`"
+              <img :src="images[lightboxIndex]" :alt="`Imagen ${lightboxIndex + 1}`"
                 class="max-w-full max-h-[70vh] object-contain rounded-lg" @click.stop />
 
 
@@ -79,7 +79,7 @@
                 <div v-for="(image, index) in images" :key="index" @click="lightboxIndex = index"
                   class="relative h-20 w-20 flex-shrink-0 rounded-lg overflow-hidden cursor-pointer transition-all hover:scale-105"
                   :class="lightboxIndex === index ? 'ring-4 ring-[#FF5858]' : 'opacity-60 hover:opacity-100'">
-                  <NuxtImg quality="80" :src="image" :alt="`Miniatura ${index + 1}`" width="80" height="80" />
+                  <img :src="image" :alt="`Miniatura ${index + 1}`" width="80" height="80" class="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
