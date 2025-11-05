@@ -1,6 +1,6 @@
 <template>
   <section class="bg-gradient-to-b from-white to-[#EFE9EB] ">
-    <div class="bg-[url('/images/backgrounds/ola2.png')] bg-cover bg-center bg-no-repeat">
+    <div class="bg-[url('/images/backgrounds/ola-2.png')] bg-fixed bg-cover bg-center bg-no-repeat">
       <div class="px-8" >
         <div class="max-w-7xl mx-auto py-12">
           <h2 v-if="title" class="text-5xl md:text-6xl font-Darina mb-12 text-gray-800 text-center sm:text-start max-w-3xl">
@@ -31,7 +31,7 @@
             </div>
           </div>
     
-          <div class="mt-16 rounded-2xl p-8 md:p-12 border-2 border-[#FFD1D1] hover:border-[#FF5858] transition-all shadow-lg">
+          <div class="mt-16  rounded-2xl p-8 md:p-12 border-2 border-[#FFD1D1] hover:border-[#FF5858] transition-all shadow-lg">
             <div class="max-w-3xl mx-auto text-center">
               <h3 class="text-3xl md:text-4xl font-Darina text-gray-800 mb-4">
                 ¿Encontraste tu parcela ideal?
