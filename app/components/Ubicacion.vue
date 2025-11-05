@@ -1,5 +1,5 @@
 <template>
-  <section id="ubicacion" class="py-12 px-8 bg-gradient-to-b from-white to-[#EFE9EB]">
+  <section id="ubicacion" class="py-12 px-8 bg-gradient-to-b from-[#EFE9EB] to-[#EFE9EB] ">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-12">
         <h2 class="text-5xl md:text-6xl font-Darina text-gray-800 mb-4">
@@ -27,7 +27,6 @@
 </template>
 
 <script setup>
-// Puedes agregar props si necesitas diferentes ubicaciones para cada proyecto
 const props = defineProps({
   mapUrl: {
     type: String,

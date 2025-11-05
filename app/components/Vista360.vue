@@ -1,16 +1,16 @@
 <template>
-  <section class="py-16 px-8 relative">
+  <section class="py-16 px-8 relative bg-[url('/images/backgrounds/ola1.png')] bg-cover bg-center bg-no-repeat">
     
     <div class="max-w-7xl mx-auto">
       <h2  class="text-5xl md:text-6xl font-Darina mb-12 text-gray-800 text-center">
-        Vista 360
+        Descubre {{ project }} desde todos los ángulos
       </h2>
     </div>  
-    <div class="w-full shadow-xl rounded-2xl relative max-w-7xl mx-auto">
+    <div class="w-full  max-w-7xl mx-auto">
       <iframe 
         title="Tour virtual 360"
         :src="tour" 
-        class="w-full rounded-2xl"
+        class="w-full border-2 border-[#FFD1D1] hover:border-[#FF5858] transition-all rounded-2xl shadow-lg"
         width="100%" 
         height="500" 
         allowfullscreen
@@ -25,6 +25,10 @@
 <script setup>
 defineProps({
   tour: {
+    type: String,
+    required: true
+  },
+  project: {
     type: String,
     required: true
   }

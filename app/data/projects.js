@@ -1,5 +1,6 @@
 const projects = [
   {
+    project: "Marcordillera",
     name: "marcordillera",
     title: "Terrenos en Pupuya con vista al mar y la cordillera",
     description: "Conecta con la calma del entorno y comienza tu proyecto en terrenos rodeados de verde y aire puro.",
@@ -29,7 +30,8 @@ const projects = [
     ],
     card: '/images/cards/marcordillera.webp'
   },
-  {
+  { 
+    project: "El Cardal",
     name: "elcardal",
     title: "Terrenos en Pupuya listos para construir tu refugio en la naturaleza",
     description: "Conecta con la calma del entorno y comienza tu proyecto en terrenos rodeados de verde y aire puro.",
@@ -58,7 +60,8 @@ const projects = [
     ],
     card: '/images/cards/el-cardal.webp'
   },
-  {
+  { 
+    project: "La Aguada",
     name: "laaguada",
     title: "Terrenos en Pupuya rodeados de naturaleza, a minutos del mar y a solo 2 horas de Santiago",
     description: "Terrenos de 5.000 m² con vista al valle y al mar, a pasos de Matanzas y con financiamiento directo.",
@@ -83,7 +86,8 @@ const projects = [
     ],
     card: '/images/cards/la-aguada.webp'
   },
-  {
+  { 
+    project: "Vista La Polcura",
     name: "vistalapolcura",
     title: "Terrenos en Pupuya con vista al mar, en una zona con gran proyección del litoral central",
     description: "Invierte en terrenos únicos frente al mar y asegura tu lugar en una de las zonas con mayor crecimiento del litoral central.",

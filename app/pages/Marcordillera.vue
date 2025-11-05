@@ -10,6 +10,7 @@
 
     <Vista360
       :tour="projectData.tour"
+      :project="projectData.project"
     />
 
     <ProjectDescription

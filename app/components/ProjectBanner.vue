@@ -15,16 +15,16 @@
         </div>
       </div>
     </section>
-    <div class="absolute -bottom-12 left-0 right-0">
+    <div class="absolute bottom-0 left-0 right-0">
       <div class="max-w-7xl mx-auto px-8">
-        <div class="flex items-center justify-center md:justify-end gap-6">
+        <div class="flex items-center justify-center md:justify-end gap-6 pb-2">
           <div
-            class="bg-black/20 backdrop-blur-sm shadow-lg w-64 h-28 rounded-2xl p-6 transform transition-all flex flex-col justify-center items-center">
-            <h3 class="text-xl font-bold text-[#FF5858]">Solo 30% de pie</h3>
+            class="bg-black/20 backdrop-blur-sm shadow-lg w-64 h-20 rounded-2xl p-6 transform transition-all flex flex-col justify-center items-center">
+            <h3 class="text-sm md:text-base font-bold text-white font-Raleway">Solo 30% de pie</h3>
           </div>
           <div
-            class="bg-black/20 backdrop-blur-sm shadow-lg w-64 h-28 rounded-2xl p-6 transform transition-all flex flex-col justify-center items-center">
-            <h3 class="text-xl font-bold text-[#FF5858] leading-none text-center">
+            class="bg-black/20 backdrop-blur-sm shadow-lg w-64 h-20 rounded-2xl p-6 transform transition-all flex flex-col justify-center items-center">
+            <h3 class="text-sm md:text-base font-bold text-white leading-none text-center font-Raleway">
               De 1 a 10 años de crédito directo, sin intereses
             </h3>
           </div>
