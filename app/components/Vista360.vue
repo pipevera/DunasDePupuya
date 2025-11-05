@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 px-8 relative bg-[url('/images/backgrounds/ola-1.png')] bg-fixed bg-cover bg-center bg-no-repeat">
+  <section class="py-16 px-8 relative bg-[url('/images/backgrounds/ola-1.png')] sm:bg-fixed bg-cover bg-center bg-no-repeat">
     
     <div class="max-w-7xl mx-auto">
       <h2  class="text-5xl md:text-6xl font-Darina mb-12 text-gray-800 text-center">
