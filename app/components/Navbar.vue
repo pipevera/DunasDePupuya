@@ -3,23 +3,27 @@
     'w-full h-20 fixed top-0 left-0 z-50 shadow-xl transition-all duration-300',
     scrolled ? 'bg-white/60 backdrop-blur-md' : 'bg-black/20 backdrop-blur-md md:bg-transparent'
   ]">
-    <div class="flex items-center justify-between  max-w-7xl mx-auto px-8 h-full">
+    <div class="flex items-center justify-between max-w-7xl mx-auto px-8 h-full">
       <NuxtLink to="/" class="cursor-pointer relative right-8 md:right-10">
-        <img v-if="scrolled" width="300" height="auto" src="/images/logo/logodunas-negro.png" alt="Logo Dunas de Pupuya" title="Logo Dunas de Pupuya" />
-        <img v-else width="300" height="auto" src="/images/logo/logodunas-blanco.png" alt="Logo Dunas de Pupuya" title="Logo Dunas de Pupuya" />
+        <img v-if="scrolled" width="300" height="auto" src="/images/logo/logodunas-negro.png" alt="Logo Dunas de Pupuya"
+          title="Logo Dunas de Pupuya" />
+        <img v-else width="300" height="auto" src="/images/logo/logodunas-blanco.png" alt="Logo Dunas de Pupuya"
+          title="Logo Dunas de Pupuya" />
       </NuxtLink>
+
       <div :class="[
         'hidden md:flex gap-8 font-semibold transition-colors duration-300',
         scrolled ? 'text-gray-800' : 'text-white'
       ]">
-        <NuxtLink v-for="link in links" :key="link.name" :class="[
+        <NuxtLink v-for="link in links" :key="link.name" to="/" :class="[
           'relative pb-2 transition cursor-pointer group px-2',
           'before:content-[\'\'] before:absolute before:bottom-0 before:left-0 before:h-[3px] before:bg-[#FF5858] before:transition-all before:duration-300',
           activeSection === link.section ? 'before:w-full' : 'before:w-0 hover:before:w-full'
-        ]" @click="handleLinkClick(link)">
+        ]" @click.prevent="handleLinkClick(link)">
           {{ link.name }}
         </NuxtLink>
       </div>
+
       <div class="flex md:hidden">
         <button @click="toggleMenu" class="px-3 py-1 rounded-md" aria-label="desplegar menú">
           <div class="flex flex-col justify-between w-8 h-6 relative">
@@ -45,11 +49,12 @@
 
     <transition name="slide-fade">
       <div v-if="isOpen" class="md:hidden absolute top-full left-0 w-full">
-        <div :class="scrolled ? 'bg-white/60 backdrop-blur-md text-gray-800' : 'bg-black/20 backdrop-blur-md text-white'" class="h-full w-full ">
-          <div class="flex flex-col items-center gap-6  font-semibold py-8">
-            <NuxtLink v-for="link in links" :key="link.name"
-              class="hover:text-[#FF5858] transition text-lg cursor-pointer"
-              @click="handleLinkClick(link)">
+        <div
+          :class="scrolled ? 'bg-white/60 backdrop-blur-md text-gray-800' : 'bg-black/20 backdrop-blur-md text-white'"
+          class="h-full w-full">
+          <div class="flex flex-col items-center gap-6 font-semibold py-8">
+            <NuxtLink v-for="link in links" :key="link.name" to="/"
+              class="hover:text-[#FF5858] transition text-lg cursor-pointer" @click.prevent="handleLinkClick(link)">
               {{ link.name }}
             </NuxtLink>
           </div>
@@ -61,7 +66,7 @@
 
 <script setup>
 import { useRouter, useRoute } from 'vue-router'
-import { ref, nextTick, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const router = useRouter()
 const route = useRoute()
@@ -77,7 +82,7 @@ const handleScroll = () => {
   const scrollPosition = window.scrollY + 100
 
   for (const sectionName of sections) {
-    const element = document.querySelector(`[id="${sectionName}"]`)
+    const element = document.getElementById(sectionName)
     if (element) {
       const { offsetTop, offsetHeight } = element
       if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
@@ -90,7 +95,11 @@ const handleScroll = () => {
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
-  handleScroll() 
+  handleScroll()
+  if (route.hash) {
+    const section = route.hash.replace('#', '')
+    setTimeout(() => scrollToSection(section), 400)
+  }
 })
 
 onUnmounted(() => {
@@ -98,10 +107,10 @@ onUnmounted(() => {
 })
 
 const links = [
-  { name: "Home", scroll: true, section: "home" },
-  { name: "Proyectos", scroll: true, section: "proyectos" },
-  { name: "Sobre Nosotros", scroll: true, section: "nosotros" },
-  { name: "Conversemos", scroll: true, section: "contacto" },
+  { name: 'Home', scroll: true, section: 'home' },
+  { name: 'Proyectos', scroll: true, section: 'proyectos' },
+  { name: 'Sobre Nosotros', scroll: true, section: 'nosotros' },
+  { name: 'Conversemos', scroll: true, section: 'contacto' }
 ]
 
 const toggleMenu = () => {
@@ -109,36 +118,28 @@ const toggleMenu = () => {
 }
 
 const scrollToSection = (sectionName) => {
-  const el = document.querySelector(`[id="${sectionName}"]`)
+  const el = document.getElementById(sectionName)
   if (el) {
-    el.scrollIntoView({ behavior: "smooth", block: "start" })
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
-}
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  })
 }
 
 const handleLinkClick = async (link) => {
   isOpen.value = false
 
-  if (link.scroll && link.section) {
-    activeSection.value = link.section
-    if (route.path !== '/') {
-      router.push('/').then(async () => {
-        await nextTick()
-        scrollToSection(link.section)
-      })
-    } else {
+  if (route.path !== '/') {
+    await router.push(`/#${link.section}`)
+    setTimeout(() => {
       scrollToSection(link.section)
-    }
-  } else if (link.to) {
-    router.push(link.to)
+    }, 600)
+  } else {
+    scrollToSection(link.section)
   }
+
+  activeSection.value = link.section
 }
 </script>
+
 
 <style scoped>
 .slide-fade-enter-active {
