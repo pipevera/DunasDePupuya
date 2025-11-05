@@ -13,7 +13,7 @@
       </h2>
 
       <div class="flex flex-col md:flex-row gap-12 lg:gap-16 items-center">
-        <div class="text-white space-y-6 w-full md:w-1/3">
+        <div class="text-white space-y-6 w-full md:w-1/3 font-Raleway">
           <p class="text-lg">
             Somos un proyecto familiar, nacido de nuestro propio sueño de dejar la ciudad y vivir cerca del mar.
           </p>

@@ -1,13 +1,13 @@
 <template>
-  <section id="ubicacion" class="py-12 px-8 bg-gradient-to-b from-[#EFE9EB] to-[#EFE9EB] ">
+  <section id="ubicacion" class="py-12 px-8 bg-[#EFE9EB]">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-12">
         <h2 class="text-5xl md:text-6xl font-Darina text-gray-800 mb-4">
           Nuestra Ubicación
         </h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        <!-- <p class="text-lg text-gray-700 font-Raleway max-w-2xl mx-auto">
           Encuentra el paraíso en la Costa de Navidad, Región de O'Higgins
-        </p>
+        </p> -->
       </div>
 
       <div class="rounded-2xl overflow-hidden shadow-xl border-2 border-[#FFD1D1] hover:border-[#FF5858] transition-all">
@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   mapUrl: {
     type: String,
   }

@@ -10,25 +10,33 @@
           <h2 class="text-5xl md:text-6xl text-center md:text-start font-Darina mb-12 text-gray-800">
             {{ title }}
           </h2>
-          
+
           <div class="space-y-4 text-gray-700">
-            <h2 class="text-lg leading-relaxed">
+            <h2 class="text-lg leading-relaxed font-Raleway">
               {{ description }}
             </h2>
           </div>
-
-          <!-- <div v-if="features && features.length > 0" class="mt-8 space-y-3">
-            <div 
-              v-for="(feature, index) in features" 
-              :key="index"
-              class="flex items-start gap-3"
+        </div>
+      </div>
+      <div>
+        <div class="mt-8">
+          <h3 class="text-4xl text-center font-Darina mb-6 text-gray-800">
+            {{ titleDescription }}
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div
+              v-for="(item, idx) in features"
+              :key="idx"
+              class="flex items-center justify-center gap-4 p-4 bg-white rounded-2xl shadow-lg border-2 border-[#FFD1D1] transition-all hover:border-[#FF5858]"
             >
-              <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span class="text-gray-700">{{ feature }}</span>
+              <div class="flex-shrink-0 mt-1">
+                <svg class="w-6 h-6 text-[#FF5858]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <p class="text-gray-700 font-Raleway">{{ item }}</p>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -56,6 +64,13 @@ const props = defineProps({
   images: {
     type: Array,
     required: true
+  },
+  features: {
+    type: Array,
+  },
+  titleDescription: {
+    type: String,
+    default: 'Características Destacadas'
   }
 })
 </script>

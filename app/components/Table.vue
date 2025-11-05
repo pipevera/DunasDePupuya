@@ -7,9 +7,9 @@
             {{ title }}
           </h2>
     
-          <div class="flex flex-wrap justify-center gap-2">
+          <div class="flex flex-wrap justify-center gap-2 font-Raleway">
             <div 
-              v-for="(terreno, index) in terrenos" 
+              v-for="(terreno, index) in visibleTerrenos" 
               :key="index"
               class="inline-flex items-center gap-1.5 rounded-full shadow-sm hover:shadow-md transition-all px-3 py-1.5 text-sm border w-[240px]"
               :class="terreno.valor === 'vendida' ? 'bg-gray-200 border-gray-300' : 'bg-white border-[#FFD1D1] hover:border-[#FF5858] '"
@@ -36,7 +36,7 @@
               <h3 class="text-3xl md:text-4xl font-Darina text-gray-800 mb-4">
                 ¿Encontraste tu parcela ideal?
               </h3>
-              <p class="text-lg text-gray-600 mb-6">
+              <p class="text-lg text-gray-700 mb-6 font-Raleway">
                 Cotiza con nosotros y descubre cómo hacer realidad tu proyecto en este hermoso lugar
               </p>
               <a 
@@ -52,14 +52,14 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
   </section>
 </template>
 
 <script setup>
+import { computed } from 'vue'
+
 const props = defineProps({
   title: {
     type: String,
@@ -70,6 +70,11 @@ const props = defineProps({
     required: true,
     default: () => []
   }
+})
+
+const visibleTerrenos = computed(() => {
+  const list = props.terrenos || []
+  return list.filter(t => t.valor !== 'vendida')
 })
 
 const formatValor = (valor) => {

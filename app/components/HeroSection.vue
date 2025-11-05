@@ -13,12 +13,12 @@
       <h1 class="text-5xl md:text-[80px] font-thin font-Darina leading-none ">
         Tener un lugar en la costa, <br> no es un sueño, es una decisión.
       </h1>
-      <p class="text-base md:text-xl font-light text-balance max-w-3xl">
+      <p class="text-base md:text-xl font-light text-balance font-Raleway max-w-4xl">
         Más de 40 parcelas entregadas en la Costa de Navidad nos avalan.
         Con facilidades de financiamiento y asesoría legal, hacemos que tu vida junto al mar sea una realidad.
       </p>
       <button @click="scrollToProyectos"
-        class="bg-red-500 hover:bg-red-600 px-6 py-3 rounded-full shadow-xl hover:scale-105 transition-all duration-300 font-medium ">
+        class="bg-red-500 hover:bg-red-600 px-6 py-3 rounded-full shadow-xl hover:scale-105 transition-all duration-300 font-medium font-Raleway">
         VER PARCELAS
       </button>
     </div>

@@ -16,7 +16,7 @@
       <h3 class="text-3xl font-Darina mb-3 text-white">
         {{ parcela.titulo }}
       </h3>
-      <p class="text-white text-lg">
+      <p class="text-white text-lg font-Raleway">
         {{ parcela.descripcion }}
       </p>
     </div>

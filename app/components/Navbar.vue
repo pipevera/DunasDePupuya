@@ -1,6 +1,6 @@
 <template>
   <nav :class="[
-    'w-full h-20 fixed top-0 left-0 z-50 shadow-xl transition-all duration-300',
+    'w-full h-20 fixed top-0 left-0 z-50 shadow-xl transition-all duration-300 font-Raleway',
     scrolled ? 'bg-white/60 backdrop-blur-md' : 'bg-black/20 backdrop-blur-md md:bg-transparent'
   ]">
     <div class="flex items-center justify-between max-w-7xl mx-auto px-8 h-full">
@@ -77,7 +77,7 @@ const scrolled = ref(false)
 const activeSection = ref('home')
 
 const links = [
-  { name: 'Home', section: 'home' },
+  { name: 'Inicio', section: 'home' },
   { name: 'Proyectos', section: 'proyectos' },
   { name: 'Sobre Nosotros', section: 'nosotros' },
   { name: 'Conversemos', section: 'contacto' }

@@ -19,16 +19,16 @@
         <h2 class="text-5xl md:text-6xl font-Darina text-center mb-12 text-gray-800">
           ¿Listo para dar el primer paso?
         </h2>
-        <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+        <p class="text-xl text-gray-700 max-w-2xl mx-auto font-Raleway">
           Conversemos sobre tu parcela ideal. Te acompañamos en todo el proceso con asesoría personalizada y sin
           compromiso.
         </p>
       </div>
 
-      <div class="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
+      <div class="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto font-Raleway">
         <a href="https://wa.me/56990023442?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20las%20parcelas."
           target="_blank"
-          class="flex items-start gap-4 p-6 bg-white border border-green-300 rounded-xl hover:bg-green-100 transition-all group shadow-md flex-1 min-w-[280px]">
+          class="flex items-start gap-4 p-6 bg-white border border-green-300 rounded-xl transition-all group shadow-md flex-1 min-w-[280px] hover:-translate-y-1">
           <div class="bg-green-500 p-3 rounded-lg group-hover:scale-110 transition-transform">
             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -38,13 +38,13 @@
           <div>
             <p class="font-semibold text-lg text-gray-800">WhatsApp</p>
             <p class="text-gray-700">+56 9 9002 3442</p>
-            <p class="text-sm text-gray-600 mt-1">Respuesta inmediata</p>
+            <p class="text-sm text-gray-700 mt-1">Respuesta inmediata</p>
           </div>
         </a>
 
         <div
-          class="flex items-start gap-4 p-6 bg-white border border-blue-300 rounded-xl hover:bg-blue-100 transition-all group shadow-md flex-1 min-w-[280px]">
-          <div class="bg-blue-500 p-3 rounded-lg group-hover:scale-110 transition-transform">
+          class="flex items-start gap-4 p-6 bg-white border rounded-xl border-[#041687] transition-all group shadow-md flex-1 min-w-[280px] hover:-translate-y-1">
+          <div class="bg-[#041687] p-3 rounded-lg group-hover:scale-110 transition-transform">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
@@ -54,13 +54,13 @@
           <div>
             <p class="font-semibold text-lg text-gray-800">Teléfono</p>
             <a href="tel:+56990023442" class="text-gray-700">+56 9 9002 3442</a>
-            <p class="text-sm text-gray-600 mt-1">Lun - Vie: 9:00 - 18:00</p>
+            <p class="text-sm text-gray-700 mt-1">Lun - Vie: 9:00 - 18:00</p>
           </div>
         </div>
 
         <div
-          class="flex items-start gap-4 p-6 bg-white border border-purple-300 hover:bg-purple-100 transition-all group rounded-xl shadow-md flex-1 min-w-[280px]">
-          <div class="bg-purple-500 p-3 rounded-lg group-hover:scale-110 transition-transform">
+          class="flex items-start gap-4 p-6 bg-white border border-[#91B0C8] transition-all group rounded-xl shadow-md flex-1 min-w-[280px] hover:-translate-y-1">
+          <div class="bg-[#91B0C8] p-3 rounded-lg group-hover:scale-110 transition-transform">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
@@ -70,11 +70,11 @@
           <div>
             <p class="font-semibold text-lg text-gray-800">Email</p>
             <a href="mailto:srivasl@uft.edu" class="text-gray-700">srivasl@uft.edu</a>
-            <p class="text-sm text-gray-600 mt-1">Respuesta en 24 hrs</p>
+            <p class="text-sm text-gray-700 mt-1">Respuesta en 24 hrs</p>
           </div>
         </div>
 
-        <div class="bg-white border border-[#FF5858] ] rounded-xl p-6 shadow-lg w-full">
+        <div class="bg-white border border-[#FF5858] rounded-xl p-6 shadow-lg w-full text-center hover:-translate-y-1 transition-all">
           <h4 class="text-xl font-bold mb-2 text-gray-800">¿Prefieres visitarnos?</h4>
           <p class="text-gray-700 mb-4">
             Agenda una visita a terreno y conoce personalmente nuestras parcelas en la Costa de Navidad.
@@ -89,6 +89,3 @@
     </div>
   </section>
 </template>
-
-<script setup>
-</script>

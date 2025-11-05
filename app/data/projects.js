@@ -10,13 +10,11 @@ const projects = [
     mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17558.438711789488!2d-71.84241599892918!3d-33.98431484509994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663d17213ec0a05%3A0x16c5d11566dd8fc2!2sMAR%20CORDILLERA!5e1!3m2!1ses-419!2scl!4v1761129839606!5m2!1ses-419!2sc",
     value: "1700",
     tour: "https://imaxphere.com/marcordillera/",
+    titleDescription: "¿Por qué Marcordillera?",
     features: [
-      "Parcelas desde 8.000 m²",
-      "Vista a la cordillera y al mar",
-      "Financiamiento hasta 48 meses",
-      "Luz y agua disponible",
-      "Camino de acceso consolidado",
-      "Entorno natural protegido"
+      "Ubicación privilegiada: A solo 8 minutos de la playa",
+      "La mezcla perfecta de playa, valle, arena y campo que te conecta con la naturaleza en su máxima expresión.",
+      "Cercanía a atractivos locales: Explora la Playa de Matanzas, el Humedal la Vega de Pupuya, el Bikepark Reserva el Maitén y colegios, a pocos minutos de tu futuro hogar.",
     ],
     galleryImages: [
       '/images/proyectos/marcordillera/galeria/1.webp',
@@ -41,13 +39,11 @@ const projects = [
     mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25780.863747649637!2d-71.838983!3d-33.972649!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663d10009f6e8bd%3A0x8b58d99062b1556b!2sLoteo%20El%20Cardal!5e1!3m2!1ses-419!2scl!4v1761129366738!5m2!1ses-419!2scl",
     value: "1700",
     tour: "https://imaxphere.com/elcardal/",
+    titleDescription: "Lo que hace único a El Cardal:",
     features: [
-      "Parcelas desde 5.000 m²",
-      "Financiamiento flexible hasta 36 meses",
-      "Agua potable y electricidad",
-      "Acceso pavimentado",
-      "A 5 minutos de la playa",
-      "Asesoría legal incluida"
+      "Terrenos amplios con carácter rural: Diseñados para quienes buscan privacidad y amplitud.",
+      "Ubicado en un entorno donde los cerros y los prados se combinan con la brisa marina, perfecto para paseos, actividades al aire libre y conexión con tu entorno.",
+      "Acceso conveniente: está cerca de caminos principales, facilitando llegar a la playa, tiendas y otros puntos de interés de Pupuya, Navidad y Matanzas"
     ],
     galleryImages: [
       '/images/proyectos/elcardal/galeria/1.webp',
@@ -69,13 +65,11 @@ const projects = [
     projectTitle: "La Aguada: Tu Vista al Mar en el Corazón de Pupuya",
     projectDescription: "En La Aguada, cada día comienza con el sonido del mar y la sensación de libertad que solo un entorno natural puede ofrecer. Este condominio privado está diseñado para quienes sueñan con tener su propio espacio junto a la costa, rodeados de tranquilidad, naturaleza y una vista inigualable.",
     value: "1700",
+    titleDescription: "Cosas que amamos de La Aguada:",
     features: [
-      "Parcelas desde 4.500 m²",
-      "Zona residencial consolidada",
-      "Financiamiento hasta 36 meses",
-      "Todos los servicios básicos",
-      "A 3 minutos de la playa",
-      "Cerca de comercio y servicios"
+      "Los terrenos se ubican en una ladera con panorámicas abiertas hacia el mar, permitiendo disfrutar del atardecer desde tu propio hogar.",
+      "Entorno natural con vegetación nativa, suaves lomajes y brisa marina constante, donde podrás disfrutar de la calma sin desconectarte del todo.",
+      "La ubicación estratégica de La Aguada te permite acceder fácilmente tanto al mar como a los caminos principales que conectan con Navidad y San Antonio, conservando al mismo tiempo la privacidad de un entorno más natural y exclusivo."
     ],
     galleryImages: [
       '/images/proyectos/laaguada/galeria/1.webp',
@@ -97,13 +91,11 @@ const projects = [
     mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8258.137128510198!2d-71.88476410703645!3d-34.04218099496343!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663d9271a6c0e35%3A0x8453f75612471656!2sCondominio%20Vista%20La%20Polcura!5e1!3m2!1ses-419!2scl!4v1761129559350!5m2!1ses-419!2scl",
     value: "1700",
     tour: "https://imaxphere.com/vistalapolcura/",
+    titleDescription: "Vista La Polcura para corazones aventureros:",
     features: [
-      "Parcelas premium desde 6.000 m²",
-      "Vista panorámica al océano",
-      "Financiamiento preferencial",
-      "Infraestructura completa",
-      "Acceso directo a la playa",
-      "Zona de alto valor turístico"
+      "Terrenos  conectados a zonas de deporte estratégicas.",
+      "Aunque rodeado de naturaleza, Vista La Polcura mantiene una excelente conexión con servicios esenciales.",
+      "A pocos minutos encontrarás colegios como la Escuela Municipal de La Polcura y el Colegio Waiwen, además de tiendas locale y restaurantes."
     ],
     galleryImages: [
       '/images/proyectos/vistalapolcura/galeria/1.webp',

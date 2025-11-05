@@ -14,6 +14,8 @@
       :description="projectData.projectDescription"
       :card="projectData.card"
       :images="projectData.galleryImages"
+      :features="projectData.features"
+      :titleDescription="projectData.titleDescription"
     />
 
     <Table
@@ -22,8 +24,9 @@
     />
 
     <Ubicacion 
-      mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106309.77426847!2d-71.89!3d-33.89!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDUzJzI0LjAiUyA3McKwNTMnMjQuMCJX!5e0!3m2!1ses!2scl!4v1234567890"
+      mapUrl="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d26743.834041602746!2d-71.78715290774862!3d-34.00460910756786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDAwJzIyLjAiUyA3McKwNDYnNTcuNiJX!5e1!3m2!1ses!2scl!4v1762315671208!5m2!1ses!2scl"
     />
+
   </div>
 </template>
 

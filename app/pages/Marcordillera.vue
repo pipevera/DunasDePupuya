@@ -19,6 +19,8 @@
       :description="projectData.projectDescription"
       :card="projectData.card"
       :images="projectData.galleryImages"
+      :features="projectData.features"
+      :titleDescription="projectData.titleDescription"
     />
   
     <Table
