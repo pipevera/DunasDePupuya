@@ -24,8 +24,8 @@
       </div>
 
       <div class="mt-16 bg-white border-2 border-[#FFD1D1] rounded-2xl hover:border-[#FF5858] transition-all shadow-lg">
-        <div class="bg-[url('/images/backgrounds/ola-2.png')] bg-cover bg-repeat bg-center rounded-2xl " >
-          <div class="max-w-3xl mx-auto text-center p-8 md:p-12">
+        <div class="bg-[url('/images/backgrounds/ola-2.png')] bg-cover bg-repeat scale-x-[-1] bg-center rounded-2xl " >
+          <div class="max-w-3xl mx-auto text-center p-8 md:p-12 scale-x-[-1]">
             <h3 class="text-3xl md:text-4xl font-Darina text-gray-800 mb-4">
               ¿Encontraste tu parcela ideal?
             </h3>
