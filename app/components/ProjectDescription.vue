@@ -1,5 +1,5 @@
 <template>
-  <section class="relative pb-12 pt-20 px-8 bg-gradient-to-t from-[#EFE9EB] to-white ">
+  <section class="relative pb-12 pt-20 px-8 bg-[#EEF0F1]">
     <div class="max-w-7xl mx-auto relative z-10">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class=" order-2 md:order-1">
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="absolute bottom-0 left-0 right-0 h-40 pointer-events-none bg-gradient-to-b from-transparent via-white/50 to-white"></div>
+    <!-- <div class="absolute bottom-0 left-0 right-0 h-40 pointer-events-none bg-gradient-to-b from-transparent via-white/50 to-white"></div> -->
   </section>
 </template>
 
