@@ -18,7 +18,9 @@
         <NuxtLink v-for="link in links" :key="link.name" to="/" :class="[
           'relative pb-2 transition cursor-pointer group px-2',
           'before:content-[\'\'] before:absolute before:bottom-0 before:left-0 before:h-[3px] before:bg-[#FF5858] before:transition-all before:duration-300',
-          activeSection === link.section ? 'before:w-full' : 'before:w-0 hover:before:w-full'
+          activeSection === link.section
+            ? 'before:w-full'
+            : 'before:w-0 hover:before:w-full'
         ]" @click.prevent="handleLinkClick(link)">
           {{ link.name }}
         </NuxtLink>
@@ -66,7 +68,6 @@
 
 <script setup>
 import { useRouter, useRoute } from 'vue-router'
-import { ref, onMounted, onUnmounted } from 'vue'
 
 const router = useRouter()
 const route = useRoute()
@@ -74,6 +75,13 @@ const route = useRoute()
 const isOpen = ref(false)
 const scrolled = ref(false)
 const activeSection = ref('home')
+
+const links = [
+  { name: 'Home', section: 'home' },
+  { name: 'Proyectos', section: 'proyectos' },
+  { name: 'Sobre Nosotros', section: 'nosotros' },
+  { name: 'Conversemos', section: 'contacto' }
+]
 
 const handleScroll = () => {
   scrolled.value = window.scrollY > 400
@@ -96,22 +104,11 @@ const handleScroll = () => {
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
   handleScroll()
-  if (route.hash) {
-    const section = route.hash.replace('#', '')
-    setTimeout(() => scrollToSection(section), 400)
-  }
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
 })
-
-const links = [
-  { name: 'Home', scroll: true, section: 'home' },
-  { name: 'Proyectos', scroll: true, section: 'proyectos' },
-  { name: 'Sobre Nosotros', scroll: true, section: 'nosotros' },
-  { name: 'Conversemos', scroll: true, section: 'contacto' }
-]
 
 const toggleMenu = () => {
   isOpen.value = !isOpen.value
@@ -126,20 +123,18 @@ const scrollToSection = (sectionName) => {
 
 const handleLinkClick = async (link) => {
   isOpen.value = false
+  activeSection.value = link.section
 
   if (route.path !== '/') {
-    await router.push(`/#${link.section}`)
+    await router.push('/')
     setTimeout(() => {
       scrollToSection(link.section)
     }, 600)
   } else {
     scrollToSection(link.section)
   }
-
-  activeSection.value = link.section
 }
 </script>
-
 
 <style scoped>
 .slide-fade-enter-active {
