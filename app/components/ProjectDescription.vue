@@ -30,9 +30,12 @@
               class="flex items-center justify-center gap-4 p-4 bg-white rounded-2xl shadow-lg border-2 border-[#FFD1D1] transition-all hover:border-[#FF5858]"
             >
               <div class="flex-shrink-0 mt-1">
-                <svg class="w-6 h-6 text-[#FF5858]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                </svg>
+                <div class="rounded-full bg-[#FF5858] " >
+                  <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+
+                </div>
               </div>
               <p class="text-gray-700 font-Raleway">{{ item }}</p>
             </div>
