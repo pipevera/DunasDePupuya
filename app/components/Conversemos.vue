@@ -69,7 +69,7 @@
           </div>
           <div>
             <p class="font-semibold text-lg text-gray-800">Email</p>
-            <a href="mailto:srivasl@uft.edu" class="text-gray-700">srivasl@uft.edu</a>
+            <a href="mailto:info@dunasdepupuya.cl" class="text-gray-700">info@dunasdepupuya.cl</a>
             <p class="text-sm text-gray-700 mt-1">Respuesta en 24 hrs</p>
           </div>
         </div>
