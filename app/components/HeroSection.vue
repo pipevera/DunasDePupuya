@@ -18,7 +18,7 @@
         Con facilidades de financiamiento y asesoría legal, hacemos que tu vida junto al mar sea una realidad.
       </p>
       <button @click="scrollToProyectos"
-        class="bg-red-500 hover:bg-red-600 px-6 py-3 rounded-full shadow-xl hover:scale-105 transition-all duration-300 font-medium font-Raleway">
+        class="bg-[#FF5858] hover:bg-red-600 px-6 py-3 rounded-full shadow-xl hover:scale-105 transition-all duration-300 font-medium font-Raleway">
         VER PARCELAS
       </button>
     </div>

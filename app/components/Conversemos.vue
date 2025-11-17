@@ -38,7 +38,6 @@
           <div>
             <p class="font-semibold text-lg text-gray-800">WhatsApp</p>
             <p class="text-gray-700">+56 9 9002 3442</p>
-            <p class="text-sm text-gray-700 mt-1">Respuesta inmediata</p>
           </div>
         </a>
 
@@ -54,7 +53,6 @@
           <div>
             <p class="font-semibold text-lg text-gray-800">Teléfono</p>
             <a href="tel:+56990023442" class="text-gray-700">+56 9 9002 3442</a>
-            <p class="text-sm text-gray-700 mt-1">Lun - Vie: 9:00 - 18:00</p>
           </div>
         </div>
 
@@ -70,7 +68,6 @@
           <div>
             <p class="font-semibold text-lg text-gray-800">Email</p>
             <a href="mailto:info@dunasdepupuya.cl" class="text-gray-700">info@dunasdepupuya.cl</a>
-            <p class="text-sm text-gray-700 mt-1">Respuesta en 24 hrs</p>
           </div>
         </div>
 
