@@ -4,13 +4,13 @@
     <div class="absolute inset-0 bg-black/20"></div>
     <div class="absolute top-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-[#EFE9EB] to-transparent">
     </div>
-    <div class="max-w-7xl mx-auto px-8">
+    <div class="max-w-7xl mx-auto">
       <h2 class="text-5xl md:text-6xl font-Darina text-center mb-12 text-white relative z-10">
         Nuestras Parcelas
       </h2>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-10">
-        <ParcelaCard v-for="parcela in parcelas" :key="parcela.id" :parcela="parcela" />
+      <div class="flex gap-6 overflow-x-auto px-6 sm:grid sm:grid-cols-2 sm:overflow-visible md:grid-cols-3 lg:grid-cols-4 lg:gap-10">
+        <ParcelaCard v-for="parcela in parcelas" :key="parcela.id" :parcela="parcela"
+          class="flex-none w-72 sm:w-auto" />
       </div>
     </div>
     <div class="absolute bottom-0 left-0 right-0 h-40 z-20 bg-gradient-to-b from-transparent to-[#EFE9EB]"></div>
