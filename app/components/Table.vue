@@ -9,7 +9,7 @@
           </h2>
 
           <div
-            class="grid grid-rows-10 grid-flow-col overflow-x-auto px-8 sm:grid-rows-none sm:grid-flow-row sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 sm:justify-items-center sm:overflow-visible gap-2 font-Raleway auto-cols-[200px] sm:auto-cols-auto">
+            class="grid grid-rows-6 grid-flow-col overflow-x-auto px-8 sm:grid-rows-none sm:grid-flow-row sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 sm:justify-items-center sm:overflow-visible gap-2 font-Raleway auto-cols-[200px] sm:auto-cols-auto">
             <div v-for="(terreno, index) in visibleTerrenos" :key="index"
               class="inline-flex items-center gap-1.5 rounded-full shadow-sm hover:shadow-md transition-all px-3 py-1.5 text-sm border w-[200px]"
               :class="terreno.valor === 'vendida' ? 'bg-gray-200 border-gray-300' : 'bg-white border-[#FFD1D1] hover:border-[#FF5858] '">
