@@ -1,6 +1,5 @@
 <template>
-  <section class="">
-
+  <section>
     <div class="max-w-7xl mx-auto">
       <div class="relative">
         <div class="relative h-64 overflow-hidden rounded-2xl shadow-xl">
