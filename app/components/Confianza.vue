@@ -27,7 +27,7 @@
         </div>
         <div class="w-full md:w-2/3">
           <div class="rounded-2xl w-full h-64 md:h-80 overflow-hidden shadow-2xl">
-            <NuxtImg loading="lazy" src="/images/saladeventas/saladeventas.webp" alt="Sala de Ventas Dunas de Pupuya"
+            <NuxtImg loading="lazy" src="/images/saladeventas/sala-de-ventas.webp" alt="Sala de Ventas Dunas de Pupuya"
               class="object-cover relative w-full h-full" />
           </div>
         </div>

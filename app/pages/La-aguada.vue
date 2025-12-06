@@ -8,6 +8,11 @@
       :description="projectData.description" 
     />
 
+    <Vista360
+      :tour="projectData.tour"
+      :project="projectData.project"
+    />
+
     <ProjectDescription
       :title="projectData.projectTitle"
       :logo="projectData.logo"

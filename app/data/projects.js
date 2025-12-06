@@ -65,6 +65,7 @@ const projects = [
     projectTitle: "La Aguada: Tu Vista al Mar en el Corazón de Pupuya",
     projectDescription: "En La Aguada, cada día comienza con el sonido del mar y la sensación de libertad que solo un entorno natural puede ofrecer. Este condominio privado está diseñado para quienes sueñan con tener su propio espacio junto a la costa, rodeados de tranquilidad, naturaleza y una vista inigualable.",
     value: "1700",
+    tour: "https://imaxphere.com/laaguada/",
     titleDescription: "Cosas que amamos de La Aguada:",
     features: [
       "Los terrenos se ubican en una ladera con panorámicas abiertas hacia el mar, permitiendo disfrutar del atardecer desde tu propio hogar.",
